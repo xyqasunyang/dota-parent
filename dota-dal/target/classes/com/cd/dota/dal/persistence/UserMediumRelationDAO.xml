@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper     
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.dota.dal.persistence.UserMediumRelationDAO">
+
+	<resultMap type="com.cd.dota.dal.domain.UserMediumRelationDO"
+		id="userMediumRelationResultMap">
+		<id column="user_medium_relation_id" property="userMediumRelationId" />
+		<result column="user_id" property="userId" />
+		<result column="medium_id" property="mediumId" />
+
+		<result column="is_delete" property="isDelete" />
+		<result column="create_time" property="createTime" />
+		<result column="create_user" property="createUser" />
+		<result column="update_time" property="updateTime" />
+		<result column="update_user" property="updateUser" />
+	</resultMap>
+
+	<sql id="all_column">
+		user_medium_relation_id,user_id,medium_id,
+		is_delete,create_time,create_user,update_time,update_user
+	</sql>
+
+	<insert id="addUserMediumRelation" parameterType="com.cd.dota.dal.domain.UserMediumRelationDO"
+		useGeneratedKeys="true" keyProperty="userMediumRelationId">
+		INSERT INTO
+		user_medium_relation
+		(user_id,medium_id,create_time,create_user)
+		VALUES
+		(#{userId},#{mediumId},now(),#{createUser})
+	</insert>
+
+	<insert id="addUserMediumRelations" parameterType="java.util.List">
+		INSERT INTO
+		user_medium_relation
+		(user_id,medium_id,create_time,create_user)
+		VALUES
+		<foreach collection="list" item="item" index="index"
+			separator=",">
+			(#{item.userId},#{item.mediumId},now(),#{item.createUser})
+		</foreach>
+	</insert>
+
+
+
+	<select id="selectUserMediumRelations" resultMap="userMediumRelationResultMap"
+		parameterType="com.cd.dota.dal.domain.UserMediumRelationDO">
+		SELECT
+		<include refid="all_column" />
+		FROM user_medium_relation WHERE is_delete=0
+		<if test="userMediumRelationId != null">
+			AND user_medium_relation_id = #{userMediumRelationId}
+		</if>
+		<if test="userId != null">
+			AND user_id = #{userId}
+		</if>
+		<if test="mediumId != null">
+			AND medium_id = #{mediumId}
+		</if>
+		<if test="pageStartNum!=null and pageSize!=null">
+			LIMIT #{pageStartNum},#{pageSize}
+		</if>
+	</select>
+
+
+	<select id="selectUserMediumRelationById" parameterType="java.lang.Integer"
+		resultMap="userMediumRelationResultMap">
+		SELECT
+		<include refid="all_column" />
+		FROM user_medium_relation WHERE user_medium_relation_id =
+		#{userMediumRelationId} AND is_delete=0
+	</select>
+
+	<update id="updateUserMediumRelation" parameterType="com.cd.dota.dal.domain.UserMediumRelationDO">
+		UPDATE user_medium_relation
+		SET
+		<if test="isDelete != null">
+			is_delete = #{isDelete},
+		</if>
+		<if test="updateUser != null">
+			update_user = #{updateUser},
+		</if>
+		update_time = now()
+		WHERE is_delete = 0 AND user_medium_relation_id =
+		#{userMediumRelationId}
+	</update>
+
+
+
+
+</mapper> 

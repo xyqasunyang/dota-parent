@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper     
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.dota.dal.persistence.MediumDAO">
+
+	<resultMap type="com.cd.dota.dal.domain.MediumDO" id="mediumResultMap">
+		<id column="medium_id" property="mediumId" />
+		<result column="name" property="name" />
+		<result column="logo" property="logo" />
+		<result column="type" property="type" />
+		<result column="introduce_s" property="introduceS" />
+		<result column="introduce_l" property="introduceL" />
+		<result column="website_url" property="websiteUrl" />
+		<result column="read_url" property="readUrl" />
+		<result column="status" property="status" />
+		<result column="isAttention" property="isAttention" />
+
+		<result column="is_delete" property="isDelete" />
+		<result column="create_time" property="createTime" />
+		<result column="create_user" property="createUser" />
+		<result column="update_time" property="updateTime" />
+		<result column="update_user" property="updateUser" />
+	</resultMap>
+
+	<sql id="all_column">
+		medium_id,name,logo,type,introduce_s,introduce_l,website_url,read_url,status,
+		is_delete,create_time,create_user,update_time,update_user
+
+	</sql>
+
+	<insert id="addMedium" parameterType="com.cd.dota.dal.domain.MediumDO"
+		useGeneratedKeys="true" keyProperty="mediumId">
+		INSERT INTO
+		medium
+		(name,logo,type,introduce_s,introduce_l,website_url,read_url,create_time,create_user)
+		VALUES
+		(#{name},#{logo},#{type},#{introduceS},#{introduceL},#{websiteUrl},#{readUrl},now(),#{createUser})
+	</insert>
+
+
+	<select id="selectMediums" resultMap="mediumResultMap"
+		parameterType="com.cd.dota.dal.domain.MediumDO">
+		SELECT
+		<include refid="all_column" />
+		FROM medium WHERE is_delete=0
+		<if test="mediumId != null">
+			AND medium_id = #{mediumId}
+		</if>
+		<if test="type != null">
+			AND type = #{type}
+		</if>
+		<if test="pageStartNum!=null and pageSize!=null">
+			LIMIT #{pageStartNum},#{pageSize}
+		</if>
+	</select>
+
+
+	<select id="selectMediumById" parameterType="java.lang.Integer"
+		resultMap="mediumResultMap">
+		SELECT
+		<include refid="all_column" />
+		FROM medium WHERE medium_id = #{mediumId} AND is_delete=0
+	</select>
+
+	<update id="updateMedium" parameterType="com.cd.dota.dal.domain.MediumDO">
+		UPDATE medium
+		SET
+		<if test="name != null">
+			name = #{name},
+		</if>
+		<if test="logo != null">
+			logo = #{logo},
+		</if>
+		<if test="type != null">
+			type = #{type},
+		</if>
+		<if test="introduceS != null">
+			introduce_s = #{introduceS},
+		</if>
+		<if test="introduceL != null">
+			introduce_l = #{introduceL},
+		</if>
+		<if test="websiteUrl != null">
+			website_url = #{websiteUrl},
+		</if>
+		<if test="readUrl != null">
+			read_url = #{readUrl},
+		</if>
+		<if test="status != null">
+			status = #{status},
+		</if>
+		<if test="isDelete != null">
+			isDelete = #{isDelete},
+		</if>
+		<if test="updateUser != null">
+			update_user = #{updateUser},
+		</if>
+		update_time = now()
+		WHERE is_delete = 0 AND medium_id = #{mediumId}
+	</update>
+
+	<select id="selectMediumsByUserId" resultMap="mediumResultMap"
+		parameterType="com.cd.dota.dal.domain.UserDO">
+		SELECT
+		<include refid="all_column" />
+		FROM medium WHERE is_delete=0
+		AND medium_id IN (SELECT medium_id FROM
+		user_medium_relation WHERE user_id=#{userId} and is_delete=0)
+		<if test="pageStartNum!=null and pageSize!=null">
+			LIMIT #{pageStartNum},#{pageSize}
+		</if>
+	</select>
+	
+	<select id="firstChoose" resultMap="mediumResultMap"
+		parameterType="com.cd.dota.dal.domain.UserDO">
+		select
+		<include refid="all_column" />
+		,1 as isAttention from `medium` where medium_id in (select
+		medium_id
+		from user_medium_relation where user_id=#{userId} and is_delete=0) and is_delete=0
+		<if test="search != null">
+			and name like "%"#{search}"%"
+		</if>
+		
+		UNION
+		select
+		<include refid="all_column" />
+		,0 as isAttention from `medium` where medium_id NOT in(select
+		medium_id from user_medium_relation where user_id=#{userId} and is_delete=0) and is_delete=0
+		<if test="search != null">
+			and name like "%"#{search}"%"
+		</if>
+		order by medium_id desc
+		<if test="pageStartNum!=null and pageSize!=null">
+			LIMIT #{pageStartNum},#{pageSize}
+		</if>
+	</select>
+	
+	
+	<select id="guessLike" resultMap="mediumResultMap"
+		parameterType="com.cd.dota.dal.domain.UserDO">
+		select
+		<include refid="all_column" />
+		,0 as isAttention from `medium` where medium_id NOT in(select
+		medium_id from user_medium_relation where user_id=#{userId} and is_delete=0) and is_delete=0
+		ORDER BY RAND()
+		<if test="pageStartNum!=null and pageSize!=null">
+			LIMIT #{pageStartNum},#{pageSize}
+		</if>
+	</select>
+	
+
+
+</mapper> 
