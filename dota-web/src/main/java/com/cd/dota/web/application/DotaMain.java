@@ -13,13 +13,17 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableAutoConfiguration
 @SpringBootApplication
+@EnableTransactionManagement
 @ComponentScan(basePackages={"com.cd.dota.core.service","com.cd.dota.core.impl","com.cd.dota.web.controller"})
 @MapperScan(basePackages={"com.cd.dota.dal"})
 @ImportResource(locations={"classpath:redis.xml"})
+@EnableScheduling
 public class DotaMain {
 	
 	

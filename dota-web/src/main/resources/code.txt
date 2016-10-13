@@ -1,0 +1,1 @@
+http://www.vpgame.com/gateway/v1/match/?callback=jQuery1910012524966542318605_1476342085360&page=1&category=&status=open&limit=6&lang=zh_CN&_=1476342085361
