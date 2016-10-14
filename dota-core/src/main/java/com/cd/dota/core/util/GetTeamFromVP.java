@@ -16,7 +16,7 @@ public class GetTeamFromVP {
 	@Scheduled(cron = "0 0 0 * * ?")
 	public static void addGame() throws Exception {
 		String str = WebClient.SendGet(
-				"http://www.vpgame.com/gateway/v1/match/?callback=jQuery1910012524966542318605_1476342033333&page=1&category=&status=open&limit=10&lang=zh_CN&_=1476108000000",
+				"http://www.vpgame.com/gateway/v1/match/?callback=jQuery1910012524966542318605_1476342033333&page=1&category=&status=open&limit=20&lang=zh_CN&_=1476108000000",
 				null).trim();
 		str = str.substring(str.indexOf("{"), str.length() - 1).trim();
 		JSONObject json = new JSONObject(str);
