@@ -47,5 +47,6 @@ Temporary Items
 .apdisk
 /target/
 
-.propertes
+.properties
 redis.xml
+.class
