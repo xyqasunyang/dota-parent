@@ -15,6 +15,5 @@
 	<bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" 
 		p:host-name="115.28.245.173" p:port="6379" p:password="712490"/>
 
-	
 
 </beans>    

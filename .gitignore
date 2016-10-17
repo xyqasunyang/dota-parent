@@ -48,4 +48,4 @@ Temporary Items
 *.properties
 redis.xml
 *.class
-/target/*
+/target/
