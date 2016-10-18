@@ -24,7 +24,6 @@ public class QqEvaluateController {
 	
 	
 	@RequestMapping("/evaluate.do")
-	@ResponseBody
 	public String evaluate(String qq) {
 		try {
 			String qqResult = redisService.get(qq);
@@ -52,7 +51,7 @@ public class QqEvaluateController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "dota";
+		return "index";
 	}
 	
 }
