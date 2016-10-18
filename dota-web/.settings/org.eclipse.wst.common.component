@@ -5,6 +5,15 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/templates"/>
+        <dependent-module archiveName="dota-dal-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dota-dal/dota-dal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dota-common-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dota-common/dota-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dota-core-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dota-core/dota-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="dota-web"/>
         <property name="java-output-path" value="/dota-web/target/classes"/>
     </wb-module>

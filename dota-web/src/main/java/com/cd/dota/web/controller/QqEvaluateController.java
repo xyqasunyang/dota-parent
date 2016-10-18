@@ -55,9 +55,4 @@ public class QqEvaluateController {
 		return "dota";
 	}
 	
-	
-	public static void main(String[] args) {
-		QqEvaluateController test = new QqEvaluateController();
-		test.evaluate("309592026");
-	}
 }

@@ -3,6 +3,7 @@ package com.cd.dota.web.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
@@ -46,7 +47,7 @@ public class MediumController {
 	 * @return
 	 */
 	@RequestMapping("/firstMediumList.do")
-	public Object firstMediumList(UserDO userDO, HttpSession session) {
+	public Object firstMediumList(UserDO userDO, HttpSession session,HttpServletRequest request) {
 		ResultEntity result = new ResultEntity(ResultEntity.SUCCESS);
 		BatchResultDTO<MediumDO> resultDTO = mediumService.firstChoose(userDO);
 		if (resultDTO.isFailed()) {

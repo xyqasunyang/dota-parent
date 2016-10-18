@@ -7,7 +7,9 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
@@ -24,7 +26,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan(basePackages={"com.cd.dota.dal"})
 @ImportResource(locations={"classpath:redis.xml"})
 @EnableScheduling
-public class DotaMain {
+public class DotaMain extends SpringBootServletInitializer {
 	
 	
     @Bean
@@ -51,6 +53,10 @@ public class DotaMain {
         return new DataSourceTransactionManager(dataSource());
     }
 	
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(DotaMain.class);
+    }
 	
 
     public static void main(String[] args) {

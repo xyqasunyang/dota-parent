@@ -63,8 +63,5 @@ public class TodayController {
 		return "dota";
 	}
 
-//	public static void main(String[] args) {
-//		TodayController test = new TodayController();
-//		test.dotay("309592026");
-//	}
+
 }
