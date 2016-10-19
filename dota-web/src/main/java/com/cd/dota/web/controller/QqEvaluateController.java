@@ -24,12 +24,12 @@ public class QqEvaluateController {
 	
 	
 	@RequestMapping("/evaluate.do")
-	public String evaluate(String qq) {
+	public String evaluate(String qq,ModelMap map) {
 		try {
-			String qqResult = redisService.get(qq);
-			if(qqResult!=null){
-				return "";
-			}
+//			String qqResult = redisService.get(qq);
+//			if(qqResult!=null){
+//				return "index";
+//			}
 			Properties p = new Properties();
 			p.load(getClass().getResourceAsStream("/appkey.properties"));
 			String key = (String) p.get("qq");
@@ -45,9 +45,10 @@ public class QqEvaluateController {
 				String conclusion = data.getString("conclusion");
 				String analysis = data.getString("analysis");
 				System.out.println("conclusion:"+conclusion+",analysis:"+analysis);
-				redisService.set(qq, conclusion+"|"+analysis);
+//				redisService.set(qq, conclusion+"|"+analysis);
+				map.put("conclusion", conclusion);
+				map.put("analysis", analysis);
 			}
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

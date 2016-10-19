@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @ComponentScan(basePackages = { "com.cd.dota.core.service", "com.cd.dota.core.impl", "com.cd.dota.web.controller" })
 @MapperScan(basePackages = { "com.cd.dota.dal" })
-@ImportResource(locations = { "classpath:redis.xml" })
+@ImportResource(locations = { "classpath:redis.xml"})
 @EnableScheduling
 public class DotaMain{
 

@@ -1,1 +1,30 @@
-indexxxxxxxxxxxxxxxx
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="hello">
+		<meta name="keywords" content="hello">
+		<title>$!{title}</title>
+
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/my_page.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<style type="text/css">
+			html {
+				width: 100%;
+				overflow-x: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		结论：${conclusion}<br>
+		分析：${analysis}
+	</body>
+
+</html>

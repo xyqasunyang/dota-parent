@@ -26,14 +26,14 @@ public class TodayController {
 
 	@RequestMapping("/today.do")
 	@ResponseBody
-	public String today(String qq) {
+	public String today() {
 		try {
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			String time = sdf.format(new Date());
-			String todayResult = redisService.get(time);
-			if (todayResult != null) {
-				return "";
-			}
+//			String todayResult = redisService.get(time);
+//			if (todayResult != null) {
+//				return "";
+//			}
 			Properties p = new Properties();
 			p.load(getClass().getResourceAsStream("/appkey.properties"));
 			String key = (String) p.get("today");
@@ -53,14 +53,20 @@ public class TodayController {
 					String des = result.getJSONObject(i).getString("des");
 					String pic = result.getJSONObject(i).getString("pic");
 					str = des + "|" + pic + "||" + str;
+					System.out.println(str);
 				}
-				redisService.set(time, str);
+//				redisService.set(time, str);
 			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return "dota";
+	}
+	
+	
+	public static void main(String[] args) {
+		new TodayController().today();
 	}
 
 
