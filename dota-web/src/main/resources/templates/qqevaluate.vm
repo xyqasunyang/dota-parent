@@ -29,13 +29,9 @@
 				<div class="form-group">
 					<input type="text" class="form-control" name="qq" placeholder="请输入您的QQ号~" id="qq-number"/>
 				</div>
-				<button class="btn btn-danger col-sm-12" id="qq-submit">提交</button>
+				<button class="btn btn-danger col-sm-2" id="qq-submit" style="float: right;">提交</button>
 			</form>
 		</div>
-		<div>
-			<h1>请输入QQ号</h1>
-		</div>
-
 	</body>
 
 </html>

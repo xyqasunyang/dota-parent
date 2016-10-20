@@ -23,9 +23,9 @@ public class QqEvaluateController {
 	RedisService redisService;
 	
 	
-	@RequestMapping("/index.html")
+	@RequestMapping("/qqevaluate.html")
 	public String index() {
-		return "index";
+		return "qqevaluate";
 	}
 	
 	
@@ -36,7 +36,7 @@ public class QqEvaluateController {
 		try {
 //			String qqResult = redisService.get(qq);
 //			if(qqResult!=null){
-//				return "index";
+//				return "evaluate";
 //			}
 			Properties p = new Properties();
 			p.load(getClass().getResourceAsStream("/appkey.properties"));

@@ -810,7 +810,7 @@ $(function() {
 		$("#qq-submit").click(function(e) {
 			var qq = $("#qq-number").val();
 			if(qq == "") {
-				alert("空");
+				alert("请输入QQ号");
 				e.preventDefault();
 				return false;
 			}else{
