@@ -21,11 +21,11 @@ $(function() {
 	$("#index_login").click(function() {
 		var account = $("#account").val();
 		var password = $("#password").val();
-		if (account.length < 5) {
+		if(account.length < 5) {
 			$("#account_error").html("账号不合法");
 			return;
 		}
-		if (password.length < 6) {
+		if(password.length < 6) {
 			$("#password_error").html("密码不合法");
 			return;
 		}
@@ -39,12 +39,12 @@ $(function() {
 			dataType: "json",
 			success: function(data) {
 				//普通用户
-				if (data.code == 0) {
+				if(data.code == 0) {
 					window.location.href = "adminAccount.html";
-				} else if (data.code == 1) {
+				} else if(data.code == 1) {
 					//管理员
 					window.location.href = "adminAccount.html";
-				} else if (data.code == 2) {
+				} else if(data.code == 2) {
 					window.location.href = "adminAccount.html";
 					//教师
 					$("#error").html(data.error);
@@ -74,11 +74,11 @@ $(function() {
 		str = uri.split("/");
 		var url = str[str.length - 1];
 		var identity = 0;
-		if (url == "teacherAccount.html") {
+		if(url == "teacherAccount.html") {
 			identity = 2;
-		} else if (url == "studentAccount.html") {
+		} else if(url == "studentAccount.html") {
 			identity = 0;
-		} else if (url == "adminAccount.html") {
+		} else if(url == "adminAccount.html") {
 			identity = 1;
 		} else {
 			identity = 0;
@@ -89,22 +89,22 @@ $(function() {
 		$("#register_password_error").html("");
 		$(".register_error").html("");
 		var name = $("#register_name").val();
-		if (name.length < 1) {
+		if(name.length < 1) {
 			$("#register_name_error").html("请填写姓名");
 			return;
 		}
 		var phone = $("#register_phone").val();
-		if (phone.length != 11) {
+		if(phone.length != 11) {
 			$("#register_phone_error").html("请填写正确手机号码");
 			return;
 		}
 		var account = $("#register_account").val();
-		if (account.length < 6) {
+		if(account.length < 6) {
 			$("#register_account_error").html("请填写6位以上账号");
 			return;
 		}
 		var password = $("#register_password").val();
-		if (password.length < 6) {
+		if(password.length < 6) {
 			$("#register_password_error").html("请填写6位以上密码");
 			return;
 		}
@@ -122,7 +122,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("注册成功...");
 					window.location.href = url;
 				} else {
@@ -149,7 +149,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					$(".user_name").val(data.object.name);
 					$(".user_phone").val(data.object.phone);
 					$(".user_account").val(data.object.account);
@@ -182,22 +182,22 @@ $(function() {
 		$(".user_password_error").html("");
 		$(".user_error").html("");
 		var name = $(".user_name").val();
-		if (name.length < 1) {
+		if(name.length < 1) {
 			$(".user_name_error").html("请填写姓名");
 			return;
 		}
 		var phone = $(".user_phone").val();
-		if (phone.length != 11) {
+		if(phone.length != 11) {
 			$(".user_phone_error").html("请填写正确手机号码");
 			return;
 		}
 		var account = $(".user_account").val();
-		if (account.length < 5) {
+		if(account.length < 5) {
 			$(".user_account_error").html("请填写5位以上账号");
 			return;
 		}
 		var password = $(".user_password").val();
-		if (password.length < 6) {
+		if(password.length < 6) {
 			$(".user_password_error").html("请填写6位以上密码");
 			return;
 		}
@@ -214,7 +214,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("修改成功...");
 					window.location.href = url;
 				} else {
@@ -231,7 +231,7 @@ $(function() {
 
 	//管理员删除
 	$("#deleteUser").click(function() {
-		if (confirm('确认删除！ ') == false) return false;
+		if(confirm('确认删除！ ') == false) return false;
 		var id = $("#modalId").val();
 		var uri = window.location.pathname;
 		var str = new Array();
@@ -246,7 +246,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("删除成功...");
 					window.location.href = url;
 				} else {
@@ -263,7 +263,7 @@ $(function() {
 
 	//推荐
 	$("#user-push").click(function() {
-		if (confirm('确认推荐！ ') == false) return false;
+		if(confirm('确认推荐！ ') == false) return false;
 		var id = $("#modalId").val();
 		var uri = window.location.pathname;
 		var str = new Array();
@@ -278,7 +278,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("推荐成功...");
 					window.location.href = url;
 				} else {
@@ -301,22 +301,22 @@ $(function() {
 		$("#register_password_error").html("");
 		$(".register_error").html("");
 		var name = $("#register_name").val();
-		if (name.length < 1) {
+		if(name.length < 1) {
 			$("#register_name_error").html("请填写姓名");
 			return;
 		}
 		var phone = $("#register_phone").val();
-		if (phone.length != 11) {
+		if(phone.length != 11) {
 			$("#register_phone_error").html("请填写正确手机号码");
 			return;
 		}
 		var account = $("#register_account").val();
-		if (account.length < 6) {
+		if(account.length < 6) {
 			$("#register_account_error").html("请填写6位以上账号");
 			return;
 		}
 		var password = $("#register_password").val();
-		if (password.length < 6) {
+		if(password.length < 6) {
 			$("#register_password_error").html("请填写6位以上密码");
 			return;
 		}
@@ -334,7 +334,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("注册成功...");
 					window.location.href = "adminAccount.html";
 				} else {
@@ -368,7 +368,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					$("#seachImg").attr("src", "../../../resources/picture/" + data.object.img);
 				} else {
 					alert("查看图片失败");
@@ -397,7 +397,7 @@ $(function() {
 			contentType: false,
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("上传成功");
 					window.location.href = url;
 				} else {
@@ -445,7 +445,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("注册成功...");
 					window.location.href = "classManage.html";
 				} else {
@@ -472,7 +472,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					$(".class_name").val(data.object.name);
 					$(".class_class").val(data.object.className);
 					$(".class_hour").val(data.object.classHour);
@@ -525,7 +525,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("修改成功...");
 					window.location.href = url;
 				} else {
@@ -542,7 +542,7 @@ $(function() {
 
 	//课程删除
 	$("#deleteClass").click(function() {
-		if (confirm('确认删除！ ') == false) return false;
+		if(confirm('确认删除！ ') == false) return false;
 		var id = $("#classId").val();
 		var uri = window.location.pathname;
 		var str = new Array();
@@ -557,7 +557,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("删除成功...");
 					window.location.href = url;
 				} else {
@@ -574,7 +574,7 @@ $(function() {
 
 	//推荐课程
 	$("#pushClass").click(function() {
-		if (confirm('确认推荐！ ') == false) return false;
+		if(confirm('确认推荐！ ') == false) return false;
 		var id = $("#classId").val();
 		var uri = window.location.pathname;
 		var str = new Array();
@@ -589,7 +589,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("推荐成功...");
 					window.location.href = url;
 				} else {
@@ -625,7 +625,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("注册成功...");
 					window.location.href = "studentClass.html";
 				} else {
@@ -642,7 +642,7 @@ $(function() {
 
 	//学生课程删除
 	$("#studentClass-delete").click(function() {
-		if (confirm('确认删除！ ') == false) return false;
+		if(confirm('确认删除！ ') == false) return false;
 		var personClassId = $("#studentClass-delete").attr("data-id");
 		var uri = window.location.pathname;
 		var str = new Array();
@@ -657,7 +657,7 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if (data.code == 0) {
+				if(data.code == 0) {
 					alert("删除成功...");
 					window.location.href = url;
 				} else {
@@ -807,11 +807,17 @@ $(function() {
 	}*/
 
 	//课程搜索
-	$("#search-class-button").click(function() {
-		var name = $("#search-class").val();
-		window.location.href = "classIntroduce.html?queryText=" + name;
-	})
+		$("#qq-submit").click(function(e) {
+			var qq = $("#qq-number").val();
+			if(qq == "") {
+				alert("空");
+				e.preventDefault();
+				return false;
+			}else{
+				e.submit();
+			}
+		})
 
-	$('[data-toggle="popover"]').popover()
+
 
 });

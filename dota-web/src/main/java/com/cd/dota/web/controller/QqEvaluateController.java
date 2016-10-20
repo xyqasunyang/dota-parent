@@ -23,6 +23,14 @@ public class QqEvaluateController {
 	RedisService redisService;
 	
 	
+	@RequestMapping("/index.html")
+	public String index() {
+		return "index";
+	}
+	
+	
+	
+	
 	@RequestMapping("/evaluate.do")
 	public String evaluate(String qq,ModelMap map) {
 		try {
@@ -48,11 +56,13 @@ public class QqEvaluateController {
 //				redisService.set(qq, conclusion+"|"+analysis);
 				map.put("conclusion", conclusion);
 				map.put("analysis", analysis);
+			}else{
+				map.put("error", "请输入正确的QQ号");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "index";
+		return "evaluate";
 	}
 	
 }

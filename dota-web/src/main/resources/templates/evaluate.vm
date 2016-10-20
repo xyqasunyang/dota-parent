@@ -23,18 +23,15 @@
 	</head>
 
 	<body>
-		#parse("head.vm")
 		<div style="margin-top: 200px;">
-			<form role="form" method="post" action="/qq/evaluate.do">
-				<div class="form-group">
-					<input type="text" class="form-control" name="qq" placeholder="请输入您的QQ号~" id="qq-number"/>
-				</div>
-				<button class="btn btn-danger col-sm-12" id="qq-submit">提交</button>
-			</form>
+			#parse("head.vm")
+			#if(!${conclusion})
+			请输入正确的QQ号
+			#else
+			结论：${conclusion}<br> 分析：${analysis}
+			#end
 		</div>
-		<div>
-			<h1>请输入QQ号</h1>
-		</div>
+		
 
 	</body>
 

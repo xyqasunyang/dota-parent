@@ -1,0 +1,29 @@
+<header style="font-family: '微软雅黑';">
+	<div class="navbar navbar-fixed-top" style="background-color:#0054a0;">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false" aria-controls="navbar">
+		            <span class="sr-only" style="background-color: white;">Toggle navigation</span>
+		            <span class="icon-bar"  style="background-color: white;"></span>
+		            <span class="icon-bar" style="background-color: white;"></span>
+		            <span class="icon-bar" style="background-color: white;"></span>
+        		</button>
+		<div class="collapse navbar-collapse" style="float: right;">
+			<ul class="nav navbar-nav" id="head-nav-one">
+				<li class="active" style="color: white;">
+					<a href="index.html" style="color:white;">
+						<span class="glyphicon glyphicon-home" style="padding-top: 3px;"></span>&nbsp;QQ号吉凶测试
+					</a>
+				</li>
+				<li>
+					<a href="index.html" style="color: white;">
+						<span class="glyphicon glyphicon-home" style="padding-top: 3px;"></span>&nbsp;历史上的今天
+					</a>
+				</li>
+				<li>
+					<a href="logout.do" style="color: white; ">
+						<span class="glyphicon glyphicon-home" style="padding-top: 3px;"></span>&nbsp;看些笑话
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
