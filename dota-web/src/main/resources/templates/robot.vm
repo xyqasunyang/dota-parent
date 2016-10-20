@@ -23,16 +23,14 @@
 	</head>
 
 	<body>
+		#parse("head.vm")
 		<div style="margin-top: 200px;">
-			#parse("head.vm")
-			#if(!${conclusion})
-			请输入正确的QQ号
-			#else
-			结论：${conclusion}<br> 分析：${analysis}
-			#end
+			<div class="form-group">
+				<input type="text" class="form-control" name="info" placeholder="请输入聊天内容" id="robot-info" />
+			</div>
+			<button class="btn btn-danger col-sm-2" id="robot-submit" style="float: right;">提交</button>
+			<div id="robot-content"></div>
 		</div>
-		
-
 	</body>
 
 </html>

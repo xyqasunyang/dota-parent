@@ -9,6 +9,11 @@
 		<div class="collapse navbar-collapse" style="float: right;">
 			<ul class="nav navbar-nav" id="head-nav-one">
 				<li class="active" style="color: white;">
+					<a href="/robot/robot.html" style="color: white; ">
+						<span class="glyphicon glyphicon-home" style="padding-top: 3px;"></span>&nbsp;聊天机器人
+					</a>
+				</li>
+				<li>
 					<a href="/qq/qqevaluate.html" style="color:white;">
 						<span class="glyphicon glyphicon-home" style="padding-top: 3px;"></span>&nbsp;QQ号吉凶测试
 					</a>

@@ -807,17 +807,49 @@ $(function() {
 	}*/
 
 	//课程搜索
-		$("#qq-submit").click(function(e) {
-			var qq = $("#qq-number").val();
-			if(qq == "") {
-				alert("请输入QQ号");
-				e.preventDefault();
-				return false;
-			}else{
-				e.submit();
-			}
-		})
+	$("#qq-submit").click(function(e) {
+		var qq = $("#qq-number").val();
+		if(qq == "") {
+			alert("请输入QQ号");
+			e.preventDefault();
+			return false;
+		} else {
+			e.submit();
+		}
+	})
 
+	$("#robot-submit").click(function(e) {
+		var info = $("#robot-info").val();
+		if(info == "") {
+			alert("请输入内容");
+			e.preventDefault();
+			return false;
+		} else {
+			$.ajax({
+				url: "/robot/robot.do",
+				type: "POST",
+				data: {
+					info: info
+				},
+				dataType: "json",
+				success: function(data) {
+					var cur = new Date();
+					var y = cur.getFullYear();
+					var M = cur.getMonth() + 1;
+					var d = cur.getDate();
+					var h = cur.getHours();
+					var m = cur.getMinutes();
+					var s = cur.getSeconds();
+					$("#robot-content").append(y+"-"+M+"-"+d+" "+h+":"+m+":"+s + " 我：" + info + "<br/>");
+					$("#robot-content").append(y+"-"+M+"-"+d+" "+h+":"+m+":"+s + " 机器人："+data.object + "<br/>");
 
+				},
+				fail: function(status) {
+
+					alert("服务器异常");
+				}
+			});
+		}
+	})
 
 });

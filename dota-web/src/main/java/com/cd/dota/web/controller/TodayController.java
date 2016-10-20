@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.cd.dota.common.SerializeUtil;
 import com.cd.dota.common.WebClient;
@@ -54,7 +53,6 @@ public class TodayController {
 			// 返回状态码正确时
 			if (json.getString("error_code").equals("0")) {
 				JSONArray result = json.getJSONArray("result");
-				String str = "";
 				List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
 				for (int i = 0; i < result.length(); i++) {
 					String des = result.getJSONObject(i).getString("des");
@@ -67,7 +65,6 @@ public class TodayController {
 				map.put("lists", list);
 				redisService.set(time.getBytes(), SerializeUtil.serialize(list),60*60*24);
 			}
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

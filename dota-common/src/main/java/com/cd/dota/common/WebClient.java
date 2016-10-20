@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -122,7 +123,7 @@ public class WebClient {
 				}
 			}
 		}
-		GetMethod getMethod = new GetMethod(url + str);
+		GetMethod getMethod = new GetMethod(url+str);
 		try {
 			httpClient.executeMethod(getMethod);// 200
 
