@@ -1,7 +1,6 @@
 package com.cd.dota.web.application;
 
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.log4j.PropertyConfigurator;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;

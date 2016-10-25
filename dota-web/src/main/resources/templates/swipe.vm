@@ -1,0 +1,189 @@
+﻿<!DOCTYPE HTML>
+
+<head>
+	<meta charset="UTF-8">
+	<title>原生H5页面模拟APP侧滑删除效果</title>
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta content="width=device-width, initial-scale=1,maximum-scale=1,maximum-scale=1, user-scalable=no" name="viewport">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none
+		}
+		
+		body {
+			font-size: 0.12rem;
+			color: #666;
+		}
+		
+		.ui-loader {
+			display: none
+		}
+		
+		.my-address-list {
+			overflow: hidden;
+		}
+		
+		.my-address-list .touch {
+			background-color: #fff;
+			border-bottom: 0.01rem solid #bfc0c0;
+			border-top: 0.01rem solid #bfc0c0;
+			margin-top: 0.12rem;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.my-address-list .item.selected {
+			-webkit-transform: translate(-18%, 0);
+			-webkit-transition: all 0.3s linear;
+		}
+		
+		.my-address-list .item {
+			overflow: hidden;
+			padding: 0 0.15rem;
+			width: 120%;
+			-webkit-transition: all 0.3s linear;
+		}
+		
+		.my-address-list .item a {
+			display: block;
+			float: left;
+			background-color: #ff0000;
+			color: #fff;
+			width: 20%;
+			margin-left: 0.16rem;
+			font-size: 0.14rem;
+			text-align: center;
+			text-decoration: none;
+		}
+		
+		.my-address-list .item .list {
+			overflow: hidden;
+			width: 2.7rem;
+			font-size: 0.14rem;
+			float: left;
+		}
+		
+		.my-address-list .item .list .name-phone {
+			overflow: hidden;
+			margin-top: 0.05rem;
+		}
+		
+		.my-address-list .item .list .name-phone span {
+			display: inline-block;
+		}
+		
+		.my-address-list .item .list .name-phone span.name {
+			float: left;
+		}
+		
+		.my-address-list .item .list .name-phone span.phone {
+			float: right;
+		}
+		
+		.my-address-list .item .list .address-info {
+			margin: 0.06rem 0;
+			width: 100%;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+		}
+		
+		.my-address-list .item .icon2 {
+			overflow: hidden;
+			float: left;
+			margin-left: 0.05rem;
+		}
+		
+		.my-address-list .item .icon2 i {
+			width: 0.14rem;
+			height: 0.14rem;
+			margin-top: 0.15rem;
+			display: inline-block;
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAA0CAYAAACZ8ljPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMjZBRDJENDIwOTgxMUU1QkQ1MjkzQTlGNEU3MTc0OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMjZBRDJENTIwOTgxMUU1QkQ1MjkzQTlGNEU3MTc0OCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQyNkFEMkQyMjA5ODExRTVCRDUyOTNBOUY0RTcxNzQ4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQyNkFEMkQzMjA5ODExRTVCRDUyOTNBOUY0RTcxNzQ4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0Y0qkAAAASpJREFUeNq81ksOgjAQANAyXsD7uVJXEjdSjyGuDCQmGo9o9ABYtJAgv3Z+kzQspuG10w4hyQ7ZyhhzMb+w+Tm/G8EAjy39uNnM7qTB/ygk0Rq0mij4M0u10G9JHVpqoe0ZaqGdS6OB9m6pNDrUFqIojCWkUJhKSqAwN4EbhZBJnCiETuRCIWZ1HCjEngEVBcxNo6CA7ScsCpSvBgYlgRiUDMaiLGAMygaGoklVVew/Sv7lxUBqDUYgJnZ6EgFFGh9Z0iMoYqkr9QMUsZK1pCEYGxiKsYAxGBmMxUggBkODWAwFUrBokIpFgRxYMMiFBYGc2CzIjU2CEtgoKIUNgpJYD5TGOqAG1oJaWB2L9+u9cc+rBtbsMNfCxtpCDGvAvRtPP7aSWB0fAQYAnk/ypwazBP8AAAAASUVORK5CYII=) no-repeat center center;
+			background-size: 50%;
+		}
+		
+		.my-address-list .item .mark {
+			background: rgba(0, 0, 0, 0.4);
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 100;
+			text-align: center;
+		}
+		
+		.my-address-list .item .mark span {
+			display: inline-block;
+			padding: 0.05rem 0.1rem;
+			color: #fff;
+			border: 0.02rem solid #fff;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+	</style>
+	<script>
+		var fontSize = 100;
+		var elm = document.documentElement;
+		elm.style.fontSize = fontSize * (elm.clientWidth / 320) + 'px';
+	</script>
+</head>
+
+<body>
+	#parse("head.vm")
+	<span style="display:none;">
+</span>
+	<!-- 代码部分begin -->
+	<div class="my-address-list" id="my-address-list" style="margin-top: 100px;">
+		<div id="cc-loading"><span></span>玩命加载中...</div>
+	</div>
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+	<script>
+		$(function() {
+
+			document.getElementById('cc-loading').style.display = 'none';
+			for(var i = 0; i < 10; i++) {
+				var cont = '<div class="touch" id="touch' + i + '"><div class="item" userAddressId="1"><div class="list">';
+				cont += '<div class="name-phone"><span class="name">收货人姓名</span>';
+				cont += '<span class="phone">12345678912</span></div>';
+				cont += '<div class="address-info">这里是收货人姓名</div>';
+				cont += '</div><div class="icon2"><i></i></div><a href="javascript:;" class="remove">删除</a></div></div>';
+				$('#my-address-list').append(cont);
+			}
+			$(".item").each(function() {
+				var h = $(this).find(".list").height();
+				$(this).find("a").height(h + "px").css("line-height", h + "px");
+				$(this).find(".icon2").height(h + "px");
+			})
+			$(".item").on("swipeleft", function() {
+				$(this).addClass('selected').parents(".touch").siblings().find(".item").removeClass('selected');
+				$(this).find("a.remove").on("click", function() {
+					var touchId = $(this).parents(".touch").attr("id");
+					//执行删除效果
+					$("#" + touchId).css("border", "0");
+					$("#" + touchId).stop().animate({
+						height: "0",
+						margin: "0"
+					}, 300, function() {
+						$(this).remove();
+					})
+				})
+			}).on("swiperight", function() {
+				$(this).parents(".touch").find(".item").removeClass('selected');
+			})
+
+		})
+	</script>
+	<!-- 代码部分end -->
+</body>
+
+</html>

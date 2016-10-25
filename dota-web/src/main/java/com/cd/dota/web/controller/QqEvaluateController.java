@@ -79,7 +79,7 @@ public class QqEvaluateController {
 		}
 		return "tosay";
 	}
-	
+
 	@RequestMapping("/getIp.do")
 	@ResponseBody
 	public Object getIp(HttpServletRequest request) {
@@ -91,6 +91,11 @@ public class QqEvaluateController {
 			e.printStackTrace();
 		}
 		return result;
+	}
+
+	@RequestMapping("/swipe.html")
+	public String swipe() {
+		return "swipe";
 	}
 
 }
