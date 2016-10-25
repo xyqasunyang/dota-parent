@@ -7,19 +7,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="hello">
 		<meta name="keywords" content="hello">
-		<title>QQ吉凶测试</title>
-
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../js/my_page.js"></script>
 		<script type="text/javascript" src="../js/index.js"></script>
-		<style type="text/css">
-			/*html {
-				width: 100%;
-				overflow-x: hidden;
-			}*/
-		</style>
 	</head>
 
 	<body>
@@ -27,7 +19,7 @@
 		<div style="margin-top: 200px;">
 			<form role="form" method="post" action="/qq/evaluate.do">
 				<div class="form-group">
-					<input type="text" class="form-control" name="qq" placeholder="请输入您的QQ号~" id="qq-number"/>
+					<input type="text" class="form-control" name="qq" placeholder="请输入您的QQ号~" id="qq-number" />
 				</div>
 				<button class="btn btn-danger col-sm-2" id="qq-submit" style="float: right;">提交</button>
 			</form>

@@ -15,24 +15,62 @@
 		<script type="text/javascript" src="../js/my_page.js"></script>
 		<script type="text/javascript" src="../js/index.js"></script>
 		<style type="text/css">
-			/*html {
-				width: 100%;
-				overflow-x: hidden;
-			}*/
+			h5 {
+				text-indent: 2em;
+				line-height: 150%;
+			}
 		</style>
 	</head>
 
 	<body>
-		<div style="margin-top: 200px;">
-			#parse("head.vm")
-			<h1 class="text-center">看些笑话</h1>
-			#foreach($content in $lists)
-				<h5>$content.content</h5>
-				<h6 class="text-right">$content.updatetime</h6>
-			#end
-		</div>
-		
+		#parse("head.vm")
+		<div id="content" style="margin-top: 100px;">
+			<h1 class="text-center">看些笑话</h1> #foreach($content in $lists)
+			<h5>$content.content</h5>
+			<br /> #end
 
+		</div>
 	</body>
 
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var range = 50; //距下边界长度/单位px
+		var maxnum = 1; //设置加载最多次数
+		var num = 2;
+		var totalheight = 0;
+		var main = $("#content"); //主体元素
+		$(window).scroll(function() {
+			var srollPos = $(window).scrollTop(); //滚动条距顶部距离(页面超出窗口的高度)
+			totalheight = parseFloat($(window).height()) + parseFloat(srollPos);
+			if(($(document).height() - range) <= totalheight && num != maxnum) {
+				$.ajax({
+					url: "joke.do",
+					type: "POST",
+					data: {
+						page: num
+					},
+					dataType: "json",
+					success: function(data) {
+						if(data.code == 0) {
+							//							alert(data.list[0].content);
+							var list = data.list;
+							for(var i = 0; i < list.length; i++) {
+								main.append("<h5>" + list[i].content + "</h5><br />");
+							}
+							//							main.append("1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />");
+						} else {
+							$(".register_error").html(data.error);
+						}
+					},
+					fail: function(status) {
+
+						alert("服务器异常");
+					}
+				});
+				num++;
+			}
+		});
+	});
+</script>

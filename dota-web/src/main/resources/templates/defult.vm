@@ -23,11 +23,10 @@
 	</head>
 
 	<body>
-		<div style="margin-top: 200px;">
-			#parse("head.vm")
-			
+		#parse("head.vm")
+		<div style="margin-top: 100px;">
+
 		</div>
-		
 
 	</body>
 

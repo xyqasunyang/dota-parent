@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="hello">
 		<meta name="keywords" content="hello">
-		<title>历史上的今天</title>
+		<title>对我留言</title>
 
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
@@ -25,12 +25,17 @@
 	<body>
 		#parse("head.vm")
 		<div style="margin-top: 100px;">
-
-			<h1 class="text-center">历史上的今天</h1> #foreach($content in $lists)
-			<h5>$content.des</h5> #if($content.pic)
-			<img src="$content.pic" /> #end #end
+			<h1 class="text-center">对我留言</h1>
+			<div class="form-group">
+				<textarea class="form-control" name="info" placeholder="对我留言" id="say-info" /></textarea>
+			</div>
+			<button class="btn btn-danger col-sm-1" id="say-submit" style="float: right;">提交</button>
+			<button class="btn btn-danger col-sm-1" id="say-check" style="float: left;">查看留言</button>
 		</div>
-
+		<div style="margin-top: 100px;">
+			<h5>建议在手机网络下使用。</h5>
+			<h5>共享后可查看他人对你的留言。</h5>
+		</div>
 	</body>
 
 </html>

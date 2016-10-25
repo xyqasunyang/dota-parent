@@ -1,6 +1,7 @@
 package com.cd.dota.web.application;
 
 import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
@@ -22,9 +23,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @ComponentScan(basePackages = { "com.cd.dota.core.service", "com.cd.dota.core.impl", "com.cd.dota.web.controller" })
 @MapperScan(basePackages = { "com.cd.dota.dal" })
-@ImportResource(locations = { "classpath:redis.xml"})
+@ImportResource(locations = { "classpath:redis.xml" })
 @EnableScheduling
-public class DotaMain{
+public class DotaMain {
 
 	@Bean
 	@ConfigurationProperties(prefix = "datasource")

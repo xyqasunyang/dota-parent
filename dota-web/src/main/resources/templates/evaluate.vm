@@ -23,15 +23,11 @@
 	</head>
 
 	<body>
-		<div style="margin-top: 200px;">
-			#parse("head.vm")
-			#if(!${conclusion})
-			请输入正确的QQ号
-			#else
-			结论：${conclusion}<br> 分析：${analysis}
-			#end
+		#parse("head.vm")
+		<div style="margin-top: 100px;">
+			#if(!${conclusion}) 请输入正确的QQ号 #else 结论：${conclusion}
+			<br> 分析：${analysis} #end
 		</div>
-		
 
 	</body>
 

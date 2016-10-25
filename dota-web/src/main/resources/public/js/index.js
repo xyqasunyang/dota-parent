@@ -825,6 +825,23 @@ $(function() {
 			e.preventDefault();
 			return false;
 		} else {
+			var cur = new Date();
+			var y = cur.getFullYear();
+			var M = cur.getMonth() + 1;
+			var d = cur.getDate();
+			var h = cur.getHours();
+			var m = cur.getMinutes();
+			var s = cur.getSeconds();
+			if(m < 10) {
+				m = "0" + m;
+			}
+			if(h < 10) {
+				h = "0" + h;
+			}
+			if(s < 10) {
+				s = "0" + s;
+			}
+			$("#robot-content").append(y + "-" + M + "-" + d + " " + h + ":" + m + ":" + s + " 我：" + info + "<br/>");
 			$.ajax({
 				url: "/robot/robot.do",
 				type: "POST",
@@ -840,9 +857,17 @@ $(function() {
 					var h = cur.getHours();
 					var m = cur.getMinutes();
 					var s = cur.getSeconds();
-					$("#robot-content").append(y+"-"+M+"-"+d+" "+h+":"+m+":"+s + " 我：" + info + "<br/>");
-					$("#robot-content").append(y+"-"+M+"-"+d+" "+h+":"+m+":"+s + " 机器人："+data.object + "<br/>");
-
+					if(m < 10) {
+						m = "0" + m;
+					}
+					if(h < 10) {
+						h = "0" + h;
+					}
+					if(s < 10) {
+						s = "0" + s;
+					}
+					$("#robot-content").append(y + "-" + M + "-" + d + " " + h + ":" + m + ":" + s + " 弱智：" + data.object + "<br/>");
+					$("#robot-info").val("");
 				},
 				fail: function(status) {
 
@@ -851,5 +876,29 @@ $(function() {
 			});
 		}
 	})
+	
+	
+	window.onload = function() {　　
+		var uri = window.location.pathname;
+		var search = window.location.search.substr(1);
+		var ip = "";
+		if(uri.endsWith("/tosay.html")&&(search==""||ip!=search)){
+//			window.location.href = uri;
+			var jqxhr = $.getJSON("getIp.do",
+            function (data) {
+            	ip = data.ip;
+            	if(ip==search)
+            	return;
+                window.location.href="/qq/tosay.html?"+data.ip;
+            })
+		
+		}
+	}
+	
+	
+	
+	
+	
+	
 
 });

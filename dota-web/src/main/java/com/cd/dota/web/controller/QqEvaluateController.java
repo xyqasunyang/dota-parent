@@ -3,13 +3,17 @@ package com.cd.dota.web.controller;
 import java.util.HashMap;
 import java.util.Properties;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.cd.dota.common.ResultEntity;
 import com.cd.dota.common.WebClient;
 import com.cd.dota.core.service.RedisService;
 
@@ -63,6 +67,30 @@ public class QqEvaluateController {
 			e.printStackTrace();
 		}
 		return "evaluate";
+	}
+
+	@RequestMapping("/tosay.html")
+	public String tosay(String qq, ModelMap map, HttpServletRequest request) {
+		String ip = request.getRemoteAddr();
+		try {
+			map.put("ip", ip);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "tosay";
+	}
+	
+	@RequestMapping("/getIp.do")
+	@ResponseBody
+	public Object getIp(HttpServletRequest request) {
+		ResultEntity result = new ResultEntity(ResultEntity.SUCCESS);
+		String ip = request.getRemoteAddr();
+		result.put("ip", ip);
+		try {
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
 	}
 
 }
