@@ -40,6 +40,7 @@ public class GetTeamFromVP {
 			String logoRight = teamRight.getString("logo");
 			String nameRight = teamRight.getString("name");
 			System.out.println("时间：" + date + "," + "战队：" + nameLeft + " VS " + nameRight + "," + round);
+			System.out.println(logoLeft+logoRight);
 		}
 	}
 }

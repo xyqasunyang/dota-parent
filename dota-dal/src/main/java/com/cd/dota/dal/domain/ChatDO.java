@@ -9,6 +9,8 @@ public class ChatDO extends PageDO{
 	private String content;
 	
 	private String reply;
+	
+	private String address;
 
 	public Integer getChatId() {
 		return chatId;
@@ -40,6 +42,14 @@ public class ChatDO extends PageDO{
 
 	public void setReply(String reply) {
 		this.reply = reply;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	
 	

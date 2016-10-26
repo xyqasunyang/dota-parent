@@ -11,9 +11,9 @@
 		useGeneratedKeys="true" keyProperty="chatId">
 		INSERT INTO
 		chat
-		(ip,content,reply,create_time,create_user)
+		(ip,content,reply,create_time,create_user,address)
 		VALUES
-		(#{ip},#{content},#{reply},now(),#{createUser})
+		(#{ip},#{content},#{reply},now(),#{createUser},#{address})
 	</insert>
 
 
