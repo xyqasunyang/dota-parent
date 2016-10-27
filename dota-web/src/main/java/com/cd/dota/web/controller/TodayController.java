@@ -46,7 +46,7 @@ public class TodayController {
 			HashMap<String, Object> param = new HashMap<String, Object>();
 			param.put("key", key);
 			param.put("v", "1.0");
-			param.put("month", today.getMonth());
+			param.put("month", today.getMonth()+1);
 			param.put("day", today.getDate());
 			String jsonResult = WebClient.SendGet("http://api.juheapi.com/japi/toh", param);
 			JSONObject json = new JSONObject(jsonResult);

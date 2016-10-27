@@ -1,0 +1,460 @@
+2016-10-27 10:07:52,012 - Starting DotaMain on ASUS-PC with PID 5112 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-10-27 10:07:52,013 - No active profile set, falling back to default profiles: default
+2016-10-27 10:07:52,084 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d7d2482: startup date [Thu Oct 27 10:07:52 CST 2016]; root of context hierarchy
+2016-10-27 10:07:52,429 - HV000001: Hibernate Validator 5.2.4.Final
+2016-10-27 10:07:52,914 - Loading XML bean definitions from class path resource [redis.xml]
+2016-10-27 10:07:53,386 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$1a993a12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,604 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,865 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,877 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,880 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$27f9d89e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,893 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,894 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,895 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,897 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,898 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,900 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,901 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,903 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:53,918 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f525876e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:07:54,193 - Tomcat initialized with port(s): 8088 (http)
+2016-10-27 10:07:54,204 - Starting service Tomcat
+2016-10-27 10:07:54,204 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-10-27 10:07:54,280 - Initializing Spring embedded WebApplicationContext
+2016-10-27 10:07:54,280 - Root WebApplicationContext: initialization completed in 2198 ms
+2016-10-27 10:07:54,584 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-27 10:07:54,588 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-27 10:07:54,588 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-27 10:07:54,588 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-27 10:07:54,588 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-27 10:07:54,588 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-10-27 10:07:54,884 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d7d2482: startup date [Thu Oct 27 10:07:52 CST 2016]; root of context hierarchy
+2016-10-27 10:07:54,948 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:07:54,950 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-10-27 10:07:54,950 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-10-27 10:07:54,953 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-10-27 10:07:54,953 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-10-27 10:07:54,953 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:07:54,953 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-10-27 10:07:54,953 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-10-27 10:07:54,954 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:07:54,954 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-10-27 10:07:54,954 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-10-27 10:07:54,955 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-27 10:07:54,955 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-27 10:07:54,956 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-10-27 10:07:54,958 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-27 10:07:54,958 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-27 10:07:54,989 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:07:54,989 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:07:55,032 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:07:55,278 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-10-27 10:07:55,463 - Registering beans for JMX exposure on startup
+2016-10-27 10:07:55,493 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-10-27 10:07:55,500 - Starting ProtocolHandler ["http-nio-8088"]
+2016-10-27 10:07:55,509 - Using a shared selector for servlet write/read
+2016-10-27 10:07:55,522 - Tomcat started on port(s): 8088 (http)
+2016-10-27 10:07:55,526 - Started DotaMain in 3.816 seconds (JVM running for 4.152)
+2016-10-27 10:07:56,690 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-10-27 10:07:56,690 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-10-27 10:07:56,703 - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2016-10-27 10:07:56,741 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:08:29,117 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:09:00,877 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:09:05,916 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:09:06,805 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:09:12,787 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:10:17,827 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:10:21,772 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:10:47,511 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:11:53,086 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:11:54,053 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:05,537 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:16,385 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:24,246 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:24,949 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:25,229 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:25,410 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:26,493 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:26,745 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:27,020 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:35,201 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:35,767 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:36,024 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:36,271 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:36,452 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:36,774 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:37,084 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:37,368 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:37,554 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:37,817 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:12:38,016 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:47,927 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:48,485 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:48,972 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:49,485 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:49,756 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:50,003 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:50,188 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:50,434 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:13:50,613 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:19:24,112 - Starting DotaMain on ASUS-PC with PID 6996 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-10-27 10:19:24,112 - No active profile set, falling back to default profiles: default
+2016-10-27 10:19:24,192 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a303da3: startup date [Thu Oct 27 10:19:24 CST 2016]; root of context hierarchy
+2016-10-27 10:19:25,110 - Loading XML bean definitions from class path resource [redis.xml]
+2016-10-27 10:19:25,161 - HV000001: Hibernate Validator 5.2.4.Final
+2016-10-27 10:19:25,571 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$3a582159] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:25,787 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,056 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,068 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,072 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$47b8bfe5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,086 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,086 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,088 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,090 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,091 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,093 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,095 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,096 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,112 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$14e46eb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:19:26,398 - Tomcat initialized with port(s): 8088 (http)
+2016-10-27 10:19:26,409 - Starting service Tomcat
+2016-10-27 10:19:26,410 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-10-27 10:19:26,502 - Initializing Spring embedded WebApplicationContext
+2016-10-27 10:19:26,502 - Root WebApplicationContext: initialization completed in 2313 ms
+2016-10-27 10:19:26,783 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-27 10:19:26,787 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-27 10:19:26,787 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-27 10:19:26,787 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-27 10:19:26,787 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-27 10:19:26,787 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-10-27 10:19:27,071 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a303da3: startup date [Thu Oct 27 10:19:24 CST 2016]; root of context hierarchy
+2016-10-27 10:19:27,143 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:19:27,144 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-10-27 10:19:27,145 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-10-27 10:19:27,147 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-10-27 10:19:27,147 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-10-27 10:19:27,148 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:19:27,148 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-10-27 10:19:27,148 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-10-27 10:19:27,149 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:19:27,149 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-10-27 10:19:27,149 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-10-27 10:19:27,150 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-27 10:19:27,150 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-27 10:19:27,150 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-10-27 10:19:27,153 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-27 10:19:27,153 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-27 10:19:27,186 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:19:27,186 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:19:27,235 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:19:27,528 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-10-27 10:19:27,704 - Registering beans for JMX exposure on startup
+2016-10-27 10:19:27,734 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-10-27 10:19:27,742 - Starting ProtocolHandler ["http-nio-8088"]
+2016-10-27 10:19:27,750 - Using a shared selector for servlet write/read
+2016-10-27 10:19:27,765 - Tomcat started on port(s): 8088 (http)
+2016-10-27 10:19:27,769 - Started DotaMain in 4.037 seconds (JVM running for 4.472)
+2016-10-27 10:27:57,578 - Starting DotaMain on ASUS-PC with PID 2188 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-10-27 10:27:57,579 - No active profile set, falling back to default profiles: default
+2016-10-27 10:27:57,648 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f7fe2f8: startup date [Thu Oct 27 10:27:57 CST 2016]; root of context hierarchy
+2016-10-27 10:27:57,995 - HV000001: Hibernate Validator 5.2.4.Final
+2016-10-27 10:27:58,441 - Loading XML bean definitions from class path resource [redis.xml]
+2016-10-27 10:27:58,893 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$bb88d44a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,107 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,364 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,375 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,378 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c8e972d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,392 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,392 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,394 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,395 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,397 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,398 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,400 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,401 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,416 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$961521a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-27 10:27:59,692 - Tomcat initialized with port(s): 8088 (http)
+2016-10-27 10:27:59,703 - Starting service Tomcat
+2016-10-27 10:27:59,703 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-10-27 10:27:59,782 - Initializing Spring embedded WebApplicationContext
+2016-10-27 10:27:59,782 - Root WebApplicationContext: initialization completed in 2139 ms
+2016-10-27 10:28:00,064 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-27 10:28:00,070 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-27 10:28:00,070 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-27 10:28:00,070 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-27 10:28:00,070 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-27 10:28:00,070 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-10-27 10:28:00,365 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f7fe2f8: startup date [Thu Oct 27 10:27:57 CST 2016]; root of context hierarchy
+2016-10-27 10:28:00,428 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:28:00,429 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-10-27 10:28:00,429 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-10-27 10:28:00,432 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-10-27 10:28:00,432 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-10-27 10:28:00,432 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-10-27 10:28:00,432 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:28:00,433 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-10-27 10:28:00,433 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-27 10:28:00,433 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-10-27 10:28:00,434 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-10-27 10:28:00,435 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-27 10:28:00,435 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-10-27 10:28:00,435 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-27 10:28:00,437 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-27 10:28:00,437 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-27 10:28:00,465 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:28:00,465 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:28:00,509 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-27 10:28:00,760 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-10-27 10:28:00,929 - Registering beans for JMX exposure on startup
+2016-10-27 10:28:00,958 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-10-27 10:28:00,966 - Starting ProtocolHandler ["http-nio-8088"]
+2016-10-27 10:28:00,974 - Using a shared selector for servlet write/read
+2016-10-27 10:28:00,989 - Tomcat started on port(s): 8088 (http)
+2016-10-27 10:28:00,993 - Started DotaMain in 3.71 seconds (JVM running for 3.973)
+2016-10-27 10:28:01,684 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-10-27 10:28:01,684 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-10-27 10:28:01,696 - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2016-10-27 10:28:01,733 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:28:09,317 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:28:11,548 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:28:51,881 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:28:53,278 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:28:53,686 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:28:55,501 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:28:55,802 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:08,789 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:09,390 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:09,862 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:10,303 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:10,729 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:11,016 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:11,285 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:11,579 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:11,788 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:12,041 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:12,294 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:12,324 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:12,576 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:12,661 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:12,972 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:12,983 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:29:13,236 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:30:10,381 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:30:11,196 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:30:11,714 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:30:12,203 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:30:12,668 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:30:55,608 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:31:19,301 - Cookie rejected: "$Version="1"; BAIDUID="68D4A98252D58E5F7DF402B3CB554202:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-27 10:31:19,740 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:31:19,896 - Cookie rejected: "$Version="1"; BAIDUID="30F6EA7428FE6F196F592929E2BFA8EE:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-27 10:31:37,205 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:31:37,766 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:31:38,303 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:31:38,815 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:31:39,351 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:32:03,388 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:32:21,526 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:32:24,485 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:33:37,214 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:33:38,005 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:33:38,266 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:05,567 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:06,264 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:06,773 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:07,161 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:09,140 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:30,951 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:33,340 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:34,732 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:35,523 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:36,181 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:36,755 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:37,316 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:37,927 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:38,564 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:46,272 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:46,631 - Cookie rejected: "$Version="1"; BAIDUID="6D57EF35874D84DA73B616E5137A4A6D:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-27 10:40:49,163 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:49,293 - Cookie rejected: "$Version="1"; BAIDUID="9E1C3850728351BFE6AEDB4159CAA16A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-27 10:40:50,675 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:50,874 - Cookie rejected: "$Version="1"; BAIDUID="2E5839A1E0C88B3F2F9CBDA42E57F360:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-27 10:40:51,857 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:40:52,001 - Cookie rejected: "$Version="1"; BAIDUID="8664FF940AA9E1A0BE2CD65B2EAB942C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-27 10:43:27,232 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:43:27,684 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:43:27,958 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:43:28,210 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:43:28,399 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:43:28,478 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:43:28,686 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:05,670 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:10,237 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:11,478 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:12,302 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:12,988 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:13,532 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:14,140 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:20,357 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:21,662 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:22,653 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:38,141 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:39,555 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:40,413 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:41,108 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:53,735 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:54,329 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:54,758 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:55,207 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:55,647 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:44:56,146 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:09,462 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:10,262 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:10,686 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:11,087 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:11,542 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:12,033 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:13,637 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:14,166 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:15,821 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:18,124 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:19,533 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:20,373 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:21,181 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:45:22,652 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:11,799 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:12,330 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:12,510 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:12,752 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:12,818 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:13,021 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:13,102 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:13,242 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:14,397 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:15,231 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:15,963 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:17,148 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:17,731 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:18,215 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:18,598 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:18,977 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:19,236 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:19,557 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:19,898 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:20,273 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:46:53,472 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:30,569 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:31,281 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:31,854 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:32,254 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:32,509 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:32,771 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:32,872 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:33,098 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:33,234 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:33,419 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:33,530 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:34,071 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:47:34,846 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:25,741 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:26,439 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:26,881 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:27,314 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:27,806 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:28,215 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:28,764 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:32,725 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:33,167 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:33,701 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:34,221 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:34,681 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:35,126 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:35,550 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:35,889 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:36,155 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:36,426 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:36,732 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:37,004 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:37,304 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:37,502 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:37,750 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:37,883 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:38,150 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:48:38,320 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:49:39,705 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:02,765 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:03,222 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:03,633 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:04,046 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:04,431 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:04,797 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:05,144 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:10,340 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:10,822 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:11,300 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:11,718 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:12,118 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:12,466 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:12,759 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:13,214 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:13,775 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:15,392 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:15,623 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:15,901 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:15,989 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:16,280 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:29,157 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:59,350 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:50:59,960 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:00,419 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:00,822 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:01,210 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:01,463 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:01,714 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:01,972 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:15,364 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:15,688 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:15,940 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:16,203 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:16,217 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:16,487 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:18,221 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:19,015 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:19,448 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:19,778 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:19,790 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:51:40,279 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:03,487 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:21,214 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:21,799 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:22,340 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:22,913 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:23,463 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:23,999 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:24,663 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:25,212 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:25,497 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:25,744 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:25,894 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:26,238 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:33,133 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:39,981 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:52:44,612 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:53:04,715 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:53:07,398 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:53:32,719 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:54:17,384 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:54:18,004 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:54:18,240 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:54:18,489 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:54:56,727 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:55:43,671 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:55:44,343 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:55:44,814 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:55:45,215 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:55:45,618 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:55:46,010 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:55:46,319 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:59:32,558 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.
+2016-10-27 10:59:34,549 - ResourceManager : unable to find resource 'robot.html.vm' in any resource loader.

@@ -1,0 +1,18 @@
+<!-- footer BEGIN -->
+<!--<div class="text-center" style="background-color: #0054a0;;color: white;">
+	<p><a href="#" style="color: white;text-decoration: none;">关于我们  |  </a><a href="#" style="color: white;text-decoration: none;">关于我们  |  </a>
+		<a href="#" style="color: white;text-decoration: none;">法律公告  |  </a><a href="#" style="color: white;text-decoration: none;">联系我们    </a></p>
+	<p>地址：浙江省海宁市XXXX</p>
+	<p>电话：1575710XXXX</p>
+	<p>扣扣：309592XXXX</p>
+</div>-->
+<div class="container text-center"style="margin-top: 20px;">
+	<p>Copyright © 2016-2016 All Rights Reserved. 备案号：浙ICP备16011544号</p>
+</div>
+<div style="width:300px;margin:0 auto; " class="text-center">
+	<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602004910" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../../picture/gov.png" style="float:left;" />
+		<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33010602004910号</p>
+	</a>
+</div>
+
+<!-- footer END -->

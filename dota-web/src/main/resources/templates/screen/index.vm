@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="hello">
+		<meta name="keywords" content="hello">
+		<title>首页</title>
+
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/my_page.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+	</head>
+
+	<body>
+		#parse("layout/head.vm")
+		<div class="container">
+			<div class="col-sm-8">
+				<div style="height: 30px;"></div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+				<div style="margin-bottom: 50px;">
+					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
+					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
+					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+				</div>
+
+			</div>
+			<div class="col-sm-4" style="margin-top: 30px;">
+				<div style="border-bottom:solid 1px #8F8F94;">
+					<h4>About Sun</h4>
+				</div>
+				<div>
+					<img src="../../picture/avatar.png" style="height: 60px;width: 60px;">
+					<h5 style="text-indent: 2em;line-height: 150%;">Sun,java开发工程师。</h5>
+					<h5 style="text-indent: 2em;line-height: 150%;">目前是一名java开发工程师，正在痛苦的学习中。</h5>
+					<h5 style="text-indent: 2em;line-height: 150%;">专注后台技术，关注交互体验，擅长java开发。</h5>
+					<h5 style="text-indent: 2em;line-height: 150%;">坚信最终不会吃土。</h5>
+				</div>
+				<div style="border-bottom:solid 1px #8F8F94;margin: 30px 0 20px 0;">
+					<h4>Friendly Link</h4>
+				</div>
+				<div>
+					<a href="https://github.com/xyqasunyang" class="index-ico" style="font-size: 20px;"><span>GitHub</span></a>
+				</div>
+
+			</div>
+		</div>
+		#parse("layout/foot.vm")
+	</body>
+
+</html>

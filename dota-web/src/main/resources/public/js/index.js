@@ -119,5 +119,15 @@ $(function() {
 				break;
 		}
 	}
+	
+	
+	
+	
+	
+	
+	$("#dialog-close").click(function(e) {
+		$("#dialog").hide();
+		$("#robot-div").css({"margin-top":"230px"});
+	})
 
 });

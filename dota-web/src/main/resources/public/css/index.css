@@ -1,0 +1,29 @@
+#head-nav-one li a {
+	color: #000000;
+	font-size: 16px;
+}
+
+.index-ico {
+	color: #000000;
+	font-size: 35px;
+	font-weight:bolder ;
+	margin-top: 5px;
+	font-family: Bradley Hand ITC;
+}
+
+.index-ico:link {
+	text-decoration: none;
+}
+
+.index-ico:active {
+	text-decoration: blink
+}
+
+.index-ico:hover {
+	cursor:pointer;
+	text-decoration: none;
+}
+
+.index-ico:visited {
+	text-decoration: none;
+}

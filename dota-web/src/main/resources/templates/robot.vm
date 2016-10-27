@@ -15,21 +15,28 @@
 		<script type="text/javascript" src="../js/my_page.js"></script>
 		<script type="text/javascript" src="../js/index.js"></script>
 		<style type="text/css">
-			/*html {
-				width: 100%;
-				overflow-x: hidden;
-			}*/
+			#dialog {
+				background-color: gray;
+				height: 30px;
+				margin-top: 50px;
+				filter: alpha(opacity=50);
+				-moz-opacity: 0.5;
+				-khtml-opacity: 0.5;
+				opacity: 0.5;
+			}
 		</style>
 	</head>
 
 	<body>
 		#parse("head.vm")
-		<!--<div style="margin-top: -50px;"><p class="close"><a href="#" onclick="closeBg();">关闭</a></p> </div>
-		<div class="text-center" style="margin-top: 100px;"><p4>建议开启手机定位功能</p4></div>-->
-		<div style="margin-top: 200px;">
+		<div id="dialog" class="text-center" style="margin-bottom: 150px;">
+			<p3 style="font-size: 20px;">建议开启手机定位使用</p3>
+			<p3 style="font-size: 20px;float: right;" id="dialog-close">关闭</p3>
+		</div>
+		<div id="robot-div">
 			<div class="form-group">
 				<input type="text" class="form-control" name="info" placeholder="请输入聊天内容" id="robot-info" />
-				<input type="text" class="form-control" name="address" id="robot-address" style="display: none;"/>
+				<input type="text" class="form-control" name="address" id="robot-address" style="display: none;" />
 			</div>
 			<button class="btn btn-danger col-sm-2" id="robot-submit" style="float: right;">提交</button>
 			<div id="robot-content"></div>
