@@ -119,15 +119,38 @@ $(function() {
 				break;
 		}
 	}
-	
-	
-	
-	
-	
-	
+
 	$("#dialog-close").click(function(e) {
 		$("#dialog").hide();
-		$("#robot-div").css({"margin-top":"230px"});
+		$("#robot-div").css({
+			"margin-top": "230px"
+		});
+	})
+
+	$("#login-submit").click(function(e) {
+		var account = $("#login-account").val();
+		var password = $("#login-password").val();
+		$.ajax({
+			url: "/user/login.do",
+			type: "POST",
+			data: {
+				account: account,
+				password: password
+			},
+			dataType: "json",
+			success: function(data) {
+				if(data.code==0){
+					window.location.href="/admin/articleManage.html";
+				}else{
+					$("#login-password-error").html(data.error);
+				}
+			},
+			fail: function(status) {
+
+				alert("服务器异常");
+			}
+		});
+
 	})
 
 });

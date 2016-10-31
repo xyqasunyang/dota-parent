@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cd.dota.common.DotaConstant;
@@ -42,6 +43,7 @@ public class UserController {
 	 * @throws IOException
 	 */
 	@RequestMapping("/login.do")
+	@ResponseBody
 	public Object login(UserDO userDO, HttpSession session) {
 		ResultEntity result = new ResultEntity(ResultEntity.SUCCESS);
 		ResultDTO<Object> resultDTO = userService.login(userDO, true);
@@ -51,7 +53,6 @@ public class UserController {
 			return result;
 		}
 		session.setAttribute(DotaConstant.LOGINSESSION, resultDTO.getModule());
-		result.setObject(resultDTO.getModule());
 		return result;
 	}
 

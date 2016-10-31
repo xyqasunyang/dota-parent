@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="hello">
+		<meta name="keywords" content="hello">
+		<title>首页</title>
+
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/my_page.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+	</head>
+
+	<body>
+		#parse("layout/adminHead.vm")
+		<div class="container" style="height: 800px;">
+			<div class="row">
+				<div style="height: 150px;"></div>
+				<div class="col-sm-7">
+
+				</div>
+				<div class="col-sm-5" style="border: 1px solid blanchedalmond;">
+					<form role="form">
+						<div class="form-group" style="margin-top: 50px;">
+							<label for="account" class="col-sm-2 control-label" style="padding-top:5px;">用户名</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="login-account" placeholder="6~18个字符，可使用字母、数字、下划线">
+								<span id="login-account-error" style="float: left;font-size:15px;color:#999;font-family:'楷体';">&nbsp;</span>
+								<span><br />&nbsp;</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="password" class="col-sm-2 control-label" style="padding-top:5px;">密码</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="login-password" placeholder="6~16个字符，区分大小写">
+								<span id="login-password-error" style="float: right;font-size:15px;color:red;font-family:'楷体';">&nbsp;</span>
+								<span><br />&nbsp;</span>
+							</div>
+						</div>
+					</form>
+					<div id="login-submit" class="btn btn-default pull-right" style="margin:0 13px 50px 0;">登录</div>
+				</div>
+
+			</div>
+		</div>
+		#parse("layout/foot.vm")
+	</body>
+
+</html>

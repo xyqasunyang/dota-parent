@@ -1,0 +1,275 @@
+2016-10-31 10:00:21,152 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:00:21,589 - Cookie rejected: "$Version="1"; BAIDUID="484D4B2C76D92A515636BBEADADE5987:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:00:21,689 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:00:22,073 - Cookie rejected: "$Version="1"; BAIDUID="0B09467480713C43904E7FA1E0910D0E:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:00:22,555 - ResourceManager : unable to find resource 'error.vm' in any resource loader.
+2016-10-31 10:00:22,556 - ResourceManager : unable to find resource 'error.html.vm' in any resource loader.
+2016-10-31 10:01:24,074 - Cookie rejected: "$Version="1"; BAIDUID="F71C187852A2A87D1F2F2C2B5A2C891C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:01:25,431 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:01:25,803 - Cookie rejected: "$Version="1"; BAIDUID="B53A50461ECB30FA30946144718C1152:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:01:43,115 - Starting DotaMain on ASUS-PC with PID 6240 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-10-31 10:01:43,115 - No active profile set, falling back to default profiles: default
+2016-10-31 10:01:43,195 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@121fdcee: startup date [Mon Oct 31 10:01:43 CST 2016]; root of context hierarchy
+2016-10-31 10:01:43,685 - HV000001: Hibernate Validator 5.2.4.Final
+2016-10-31 10:01:44,088 - Loading XML bean definitions from class path resource [redis.xml]
+2016-10-31 10:01:44,533 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$d80384ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:44,754 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,014 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,025 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,028 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e5642338] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,042 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,042 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,044 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,045 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,047 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,048 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,050 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,051 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,066 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b28fd208] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:01:45,331 - Tomcat initialized with port(s): 8088 (http)
+2016-10-31 10:01:45,342 - Starting service Tomcat
+2016-10-31 10:01:45,342 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-10-31 10:01:45,418 - Initializing Spring embedded WebApplicationContext
+2016-10-31 10:01:45,418 - Root WebApplicationContext: initialization completed in 2225 ms
+2016-10-31 10:01:45,700 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-31 10:01:45,704 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-31 10:01:45,704 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-31 10:01:45,705 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-31 10:01:45,705 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-31 10:01:45,705 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-10-31 10:01:46,001 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@121fdcee: startup date [Mon Oct 31 10:01:43 CST 2016]; root of context hierarchy
+2016-10-31 10:01:46,064 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:01:46,065 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-10-31 10:01:46,066 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-10-31 10:01:46,066 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-10-31 10:01:46,066 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-10-31 10:01:46,069 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-10-31 10:01:46,069 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-10-31 10:01:46,069 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:01:46,069 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-10-31 10:01:46,070 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-10-31 10:01:46,070 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:01:46,070 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-10-31 10:01:46,071 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-10-31 10:01:46,072 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-31 10:01:46,072 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-31 10:01:46,072 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-10-31 10:01:46,075 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-31 10:01:46,075 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-31 10:01:46,102 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:01:46,102 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:01:46,147 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:01:46,396 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-10-31 10:01:46,567 - Registering beans for JMX exposure on startup
+2016-10-31 10:01:46,596 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-10-31 10:01:46,604 - Starting ProtocolHandler ["http-nio-8088"]
+2016-10-31 10:01:46,612 - Using a shared selector for servlet write/read
+2016-10-31 10:01:46,625 - Tomcat started on port(s): 8088 (http)
+2016-10-31 10:01:46,629 - Started DotaMain in 3.805 seconds (JVM running for 4.07)
+2016-10-31 10:01:50,473 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-10-31 10:01:50,473 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-10-31 10:01:50,486 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2016-10-31 10:01:50,526 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:01:51,029 - Cookie rejected: "$Version="1"; BAIDUID="B4C1A5A4AA04B429511792E8C5289897:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:01:51,456 - ResourceManager : unable to find resource 'error.vm' in any resource loader.
+2016-10-31 10:01:51,459 - ResourceManager : unable to find resource 'error.html.vm' in any resource loader.
+2016-10-31 10:02:55,385 - Starting DotaMain on ASUS-PC with PID 7144 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-10-31 10:02:55,385 - No active profile set, falling back to default profiles: default
+2016-10-31 10:02:55,470 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33d6798: startup date [Mon Oct 31 10:02:55 CST 2016]; root of context hierarchy
+2016-10-31 10:02:55,877 - HV000001: Hibernate Validator 5.2.4.Final
+2016-10-31 10:02:56,332 - Loading XML bean definitions from class path resource [redis.xml]
+2016-10-31 10:02:56,794 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$b9a7c76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,004 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,246 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,257 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,260 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$18fb1b02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,274 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,275 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,276 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,278 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,279 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,281 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,282 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,284 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,299 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e626c9d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:02:57,580 - Tomcat initialized with port(s): 8088 (http)
+2016-10-31 10:02:57,592 - Starting service Tomcat
+2016-10-31 10:02:57,593 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-10-31 10:02:57,672 - Initializing Spring embedded WebApplicationContext
+2016-10-31 10:02:57,672 - Root WebApplicationContext: initialization completed in 2204 ms
+2016-10-31 10:02:57,941 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-31 10:02:57,945 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-31 10:02:57,945 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-31 10:02:57,945 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-31 10:02:57,945 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-31 10:02:57,945 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-10-31 10:02:58,218 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33d6798: startup date [Mon Oct 31 10:02:55 CST 2016]; root of context hierarchy
+2016-10-31 10:02:58,285 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:02:58,289 - Mapped "{[/blogs/java.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.java(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,289 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,289 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,289 - Mapped "{[/blogs/linux.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.linux(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,289 - Mapped "{[/blogs/work.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.work(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,290 - Mapped "{[/blogs/guest.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.guest(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,290 - Mapped "{[/blogs/html.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.html(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,291 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,291 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-10-31 10:02:58,292 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-10-31 10:02:58,292 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,292 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:02:58,293 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-10-31 10:02:58,293 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-10-31 10:02:58,293 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:02:58,294 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-10-31 10:02:58,294 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-10-31 10:02:58,295 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-31 10:02:58,295 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-31 10:02:58,295 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-10-31 10:02:58,297 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-31 10:02:58,297 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-31 10:02:58,329 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:02:58,329 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:02:58,373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:02:58,607 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-10-31 10:02:58,763 - Registering beans for JMX exposure on startup
+2016-10-31 10:02:58,792 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-10-31 10:02:58,799 - Starting ProtocolHandler ["http-nio-8088"]
+2016-10-31 10:02:58,807 - Using a shared selector for servlet write/read
+2016-10-31 10:02:58,820 - Tomcat started on port(s): 8088 (http)
+2016-10-31 10:02:58,824 - Started DotaMain in 3.73 seconds (JVM running for 3.998)
+2016-10-31 10:03:00,376 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-10-31 10:03:00,376 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-10-31 10:03:00,388 - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2016-10-31 10:03:00,429 - ResourceManager : unable to find resource 'screen/java.html.vm' in any resource loader.
+2016-10-31 10:03:00,939 - Cookie rejected: "$Version="1"; BAIDUID="A8FF7D82AEE84DDAA8C5F774F608C9BD:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:02,923 - ResourceManager : unable to find resource 'screen/java.html.vm' in any resource loader.
+2016-10-31 10:03:03,718 - Cookie rejected: "$Version="1"; BAIDUID="E2AB204D3F55F538FF79F74222C499BB:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:04,419 - ResourceManager : unable to find resource 'screen/html.html.vm' in any resource loader.
+2016-10-31 10:03:29,346 - ResourceManager : unable to find resource 'screen/html.html.vm' in any resource loader.
+2016-10-31 10:03:30,032 - ResourceManager : unable to find resource 'screen/html.html.vm' in any resource loader.
+2016-10-31 10:03:30,656 - ResourceManager : unable to find resource 'screen/html.html.vm' in any resource loader.
+2016-10-31 10:03:31,126 - ResourceManager : unable to find resource 'screen/html.html.vm' in any resource loader.
+2016-10-31 10:03:31,553 - ResourceManager : unable to find resource 'screen/html.html.vm' in any resource loader.
+2016-10-31 10:03:31,943 - Cookie rejected: "$Version="1"; BAIDUID="C03E37912651D8CBFFDEC4AA74150BBB:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:33,492 - ResourceManager : unable to find resource 'screen/linux.html.vm' in any resource loader.
+2016-10-31 10:03:33,875 - Cookie rejected: "$Version="1"; BAIDUID="551C6943C5454DAA198606E58F740BC4:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:34,481 - ResourceManager : unable to find resource 'screen/work.html.vm' in any resource loader.
+2016-10-31 10:03:34,845 - Cookie rejected: "$Version="1"; BAIDUID="6F31C97939D849CC30745F96DA68E887:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:35,577 - ResourceManager : unable to find resource 'screen/guest.html.vm' in any resource loader.
+2016-10-31 10:03:35,965 - Cookie rejected: "$Version="1"; BAIDUID="6AA0EE3B1736F2EEC8B95B79412B979F:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:36,817 - ResourceManager : unable to find resource 'screen/work.html.vm' in any resource loader.
+2016-10-31 10:03:37,189 - Cookie rejected: "$Version="1"; BAIDUID="AD8429338C281F44E4EF601A7BF032D4:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:37,953 - ResourceManager : unable to find resource 'screen/work.html.vm' in any resource loader.
+2016-10-31 10:03:38,340 - Cookie rejected: "$Version="1"; BAIDUID="F5DFBA301AC32FD028BE1038FBE75427:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:39,521 - ResourceManager : unable to find resource 'screen/java.html.vm' in any resource loader.
+2016-10-31 10:03:39,909 - Cookie rejected: "$Version="1"; BAIDUID="CCB989E035AF527A8A727017CD66FF3A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:40,018 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:03:40,396 - Cookie rejected: "$Version="1"; BAIDUID="1B48C48E22C74168949A46E7BEAE62F6:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:40,929 - ResourceManager : unable to find resource 'screen/guest.html.vm' in any resource loader.
+2016-10-31 10:03:41,290 - Cookie rejected: "$Version="1"; BAIDUID="BE1E13D16761DB51F07A0388C74CB2C0:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:41,791 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:03:42,159 - Cookie rejected: "$Version="1"; BAIDUID="65F89802DC508475EB189257F9B2917A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:42,305 - ResourceManager : unable to find resource 'screen/guest.html.vm' in any resource loader.
+2016-10-31 10:03:42,670 - Cookie rejected: "$Version="1"; BAIDUID="CA2A9B86C3F241E72F6E4727DA53D3B5:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:42,889 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:03:43,252 - Cookie rejected: "$Version="1"; BAIDUID="67F33D222CA91A09348E8C43FA96D2B0:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:03:43,785 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:03:44,159 - Cookie rejected: "$Version="1"; BAIDUID="E8447D55C9A5FFA55BB5443233F38178:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:04:00,179 - Cookie rejected: "$Version="1"; BAIDUID="D13193D918ED7E591449D5A2037CBC79:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:04:01,465 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:01,864 - Cookie rejected: "$Version="1"; BAIDUID="28F6141EE6FABDB4BE5D70DC87602AA4:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:04:41,066 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:41,490 - Cookie rejected: "$Version="1"; BAIDUID="E60C7EACA4226FEDD53099A5E4C51E1E:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:04:41,576 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:41,961 - Cookie rejected: "$Version="1"; BAIDUID="04ACBEE0D3C74314939F21A6451E89D5:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:04:44,455 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:44,847 - Cookie rejected: "$Version="1"; BAIDUID="332D743641C9519E7A93CA719028F55B:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:04:44,951 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:45,305 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:45,334 - Cookie rejected: "$Version="1"; BAIDUID="305C155ADDC64D3FD4A146B85E321C07:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:04:45,512 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:45,696 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:45,840 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:04:46,227 - Cookie rejected: "$Version="1"; BAIDUID="98D0FE6FCB06D8477D6B2BF832EAD565:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:05:01,139 - ResourceManager : unable to find resource 'screen/java.html.vm' in any resource loader.
+2016-10-31 10:05:01,515 - Cookie rejected: "$Version="1"; BAIDUID="BB5B8BF098289344224667A28B1F4324:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:05:01,817 - ResourceManager : unable to find resource 'screen/work.html.vm' in any resource loader.
+2016-10-31 10:05:02,201 - Cookie rejected: "$Version="1"; BAIDUID="AC06C906678C596F3F36ECD7215FAF4D:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:05:02,560 - ResourceManager : unable to find resource 'screen/guest.html.vm' in any resource loader.
+2016-10-31 10:05:02,937 - Cookie rejected: "$Version="1"; BAIDUID="61AB6F4CF0C938879D86A9A20605E4C2:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:05:03,096 - ResourceManager : unable to find resource 'screen/work.html.vm' in any resource loader.
+2016-10-31 10:05:03,479 - Cookie rejected: "$Version="1"; BAIDUID="258B69E600B22F318C2CC8027AAEC51A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:05:03,778 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:05:04,184 - Cookie rejected: "$Version="1"; BAIDUID="4CD60359346E16F7B8D1EEA851E405A1:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:05:05,489 - ResourceManager : unable to find resource 'screen/guest.html.vm' in any resource loader.
+2016-10-31 10:05:05,871 - Cookie rejected: "$Version="1"; BAIDUID="9C5D1AB7C667E2B4B69E93B6A0DD8A89:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:37:52,932 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-10-31 10:49:22,279 - Cookie rejected: "$Version="1"; BAIDUID="CFBBFFB525D29A73478CB63BE2ACB696:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-10-31 10:57:29,726 - Starting DotaMain on ASUS-PC with PID 7036 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-10-31 10:57:29,727 - No active profile set, falling back to default profiles: default
+2016-10-31 10:57:29,798 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18e28704: startup date [Mon Oct 31 10:57:29 CST 2016]; root of context hierarchy
+2016-10-31 10:57:30,156 - HV000001: Hibernate Validator 5.2.4.Final
+2016-10-31 10:57:30,553 - Loading XML bean definitions from class path resource [redis.xml]
+2016-10-31 10:57:31,003 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$f60f96bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,215 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,479 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,490 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,493 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$3703549] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,506 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,507 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,509 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,510 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,512 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,513 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,514 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,516 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,531 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d09be419] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-31 10:57:31,804 - Tomcat initialized with port(s): 8088 (http)
+2016-10-31 10:57:31,815 - Starting service Tomcat
+2016-10-31 10:57:31,816 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-10-31 10:57:31,891 - Initializing Spring embedded WebApplicationContext
+2016-10-31 10:57:31,891 - Root WebApplicationContext: initialization completed in 2095 ms
+2016-10-31 10:57:32,183 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-31 10:57:32,187 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-31 10:57:32,187 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-31 10:57:32,187 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-31 10:57:32,188 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-31 10:57:32,188 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-10-31 10:57:32,486 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18e28704: startup date [Mon Oct 31 10:57:29 CST 2016]; root of context hierarchy
+2016-10-31 10:57:32,552 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:57:32,557 - Mapped "{[/blogs/java.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.java(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,557 - Mapped "{[/blogs/html.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.html(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,557 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,557 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,557 - Mapped "{[/blogs/linux.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.linux(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,557 - Mapped "{[/blogs/work.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.work(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,557 - Mapped "{[/blogs/guest.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.guest(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,558 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,559 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-10-31 10:57:32,560 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-10-31 10:57:32,560 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,560 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:57:32,561 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-10-31 10:57:32,561 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-10-31 10:57:32,561 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-10-31 10:57:32,561 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-10-31 10:57:32,562 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-10-31 10:57:32,563 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-31 10:57:32,563 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-10-31 10:57:32,563 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-10-31 10:57:32,565 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-31 10:57:32,565 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-31 10:57:32,598 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:57:32,598 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:57:32,644 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-31 10:57:32,897 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-10-31 10:57:33,085 - Registering beans for JMX exposure on startup
+2016-10-31 10:57:33,115 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-10-31 10:57:33,122 - Starting ProtocolHandler ["http-nio-8088"]
+2016-10-31 10:57:33,130 - Using a shared selector for servlet write/read
+2016-10-31 10:57:33,144 - Tomcat started on port(s): 8088 (http)
+2016-10-31 10:57:33,148 - Started DotaMain in 3.72 seconds (JVM running for 4.053)
+2016-10-31 10:57:38,168 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-10-31 10:57:38,168 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-10-31 10:57:38,181 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2016-10-31 10:57:38,229 - ResourceManager : unable to find resource 'error.vm' in any resource loader.

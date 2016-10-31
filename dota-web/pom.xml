@@ -18,5 +18,10 @@
 			<artifactId>dota-core</artifactId>
 			<version>1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>cn.songxinqiang</groupId>
+			<artifactId>com.baidu.ueditor</artifactId>
+			<version>1.1.2-offical</version>
+		</dependency>
 	</dependencies>
 </project>

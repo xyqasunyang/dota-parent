@@ -13,6 +13,8 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.cd.dota.common.DotaConstant;
+
 @WebFilter(filterName = "dotaFilter", urlPatterns = "/*")
 public class DotaFilter implements Filter {
 
@@ -24,6 +26,22 @@ public class DotaFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		HttpServletRequest httpRequest = (HttpServletRequest) request;
 		HttpServletResponse httpResponse = (HttpServletResponse) response;
+		if(httpRequest.getSession().getAttribute(DotaConstant.LOGINSESSION)==null){
+			//这些页面不能访问
+			if(httpRequest.getRequestURI().endsWith("/addArticle.html")||
+					httpRequest.getRequestURI().endsWith("/articleManage.html")
+					){
+				httpResponse.sendRedirect("http://localhost:8088/admin/admin.html");
+				return;
+			}
+		}
+		
+		
+		
+		if(httpRequest.getRequestURI().equals("/")){
+			httpResponse.sendRedirect("http://localhost:8088/blogs/index.html");
+			return;
+		}
 		String str = String.valueOf(httpRequest.getSession().getAttribute(httpRequest.getLocalAddr()));
 		if (!str.equals("null") && httpRequest.getServletPath().endsWith("/robot.do")) {
 			Long interval = Long.valueOf(str);

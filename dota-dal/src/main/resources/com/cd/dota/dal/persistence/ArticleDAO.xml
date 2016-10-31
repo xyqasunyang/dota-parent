@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper     
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cd.dota.dal.persistence.ArticleDAO">
+
+	<resultMap type="com.cd.dota.dal.domain.ArticleDO" id="articleResultMap">
+		<id column="article_id" property="articleId" />
+		<result column="content" property="content" />
+		<result column="author" property="author" />
+		<result column="comment_num" property="commentNum" />
+		<result column="click_num" property="clickNum" />
+		<result column="title" property="title" />
+		<result column="excerpt" property="excerpt" />
+		<result column="classify" property="classify" />
+
+		<result column="is_delete" property="isDelete" />
+		<result column="create_time" property="createTime" />
+		<result column="create_user" property="createUser" />
+		<result column="update_time" property="updateTime" />
+		<result column="update_user" property="updateUser" />
+	</resultMap>
+
+	<sql id="all_column">
+		article_id,content,author,comment_num,click_num,title,
+		is_delete,create_time,create_user,update_time,update_user,excerpt,classify
+	</sql>
+
+	<insert id="addArticle" parameterType="com.cd.dota.dal.domain.ArticleDO"
+		useGeneratedKeys="true" keyProperty="articleId">
+		INSERT INTO
+		article
+		(content,author,create_time,create_user,title,excerpt,classify)
+		VALUES
+		(#{content},#{author},now(),#{createUser},#{title},#{excerpt},#{classify})
+	</insert>
+
+
+	<select id="selectArticles" resultMap="articleResultMap"
+		parameterType="com.cd.dota.dal.domain.ArticleDO">
+		SELECT
+		<include refid="all_column" />
+		FROM article WHERE is_delete=0
+		<if test="articleId != null">
+			AND article_id = #{articleId}
+		</if>
+		<if test="pageStartNum!=null and pageSize!=null">
+			LIMIT #{pageStartNum},#{pageSize}
+		</if>
+	</select>
+
+
+	<select id="selectArticleById" parameterType="java.lang.Integer"
+		resultMap="articleResultMap">
+		SELECT
+		<include refid="all_column" />
+		FROM article WHERE article_id = #{articleId} AND is_delete=0
+	</select>
+
+	<update id="updateArticle" parameterType="com.cd.dota.dal.domain.ArticleDO">
+		UPDATE article
+		SET
+		<if test="content != null">
+			content = #{content},
+		</if>
+		<if test="title != null">
+			title = #{title},
+		</if>
+		<if test="classify != null">
+			classify = #{classify},
+		</if>
+		<if test="excerpt != null">
+			excerpt = #{excerpt},
+		</if>
+		<if test="author != null">
+			author = #{author},
+		</if>
+		<if test="commentNum != null">
+			comment_num = #{commentNum},
+		</if>
+		<if test="clickNum != null">
+			click_num = #{clickNum},
+		</if>
+		<if test="isDelete != null">
+			is_delete = #{isDelete},
+		</if>
+		<if test="updateUser != null">
+			update_user = #{updateUser},
+		</if>
+		update_time = now()
+		WHERE is_delete = 0 AND article_id = #{articleId}
+	</update>
+
+
+
+
+</mapper> 

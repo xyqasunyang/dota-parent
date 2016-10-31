@@ -1,24 +1,38 @@
 <header style="font-family: '微软雅黑';margin-bottom: 20px;">
 	<div class="navbar" style="border-bottom:solid 1px #8F8F94;">
 		<div class="container">
-			<a class="index-ico">Sun</a>
+			<a class="index-ico" href="/blogs/index.html">Sun</a>
 			<div class="collapse navbar-collapse" style="float: right;">
 				<ul class="nav navbar-nav" id="head-nav-one">
 					<li class="active">
 						<a href="/blogs/index.html">首页</a>
 					</li>
 					<li>
-						<a href="/blogs/qqevaluate.html">技术分享</a>
+						<a href="/blogs/share.html" data-toggle="dropdown">技术分享<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="/blogs/java.html">java</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="/blogs/html.html">html</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="/blogs/linux.html">linux</a>
+							</li>
+							
+						</ul>
 					</li>
 					<li>
-						<a href="/blogs/history.html">职业生涯</a>
+						<a href="/blogs/work.html">职业生涯</a>
 					</li>
 					<li>
-						<a href="/blogs/joke.html">关于我们</a>
+						<a href="/blogs/about.html">关于我们</a>
 					</li>
 				</ul>
 			</div>
-			<div class="col-sm-3 pull-right"><input type="text" placeholder="搜索" class="form-control" style="margin-top: 9px;"/></div>
+			<div class="col-sm-3 pull-right"><input type="text" placeholder="搜索" class="form-control" style="margin-top: 9px;" /></div>
 		</div>
 	</div>
 </header>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="hello">
+		<meta name="keywords" content="hello">
+		<title>首页</title>
+
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../utf8-jsp/themes/default/css/ueditor.min.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/my_page.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+	</head>
+
+	<body>
+		#parse("layout/adminHead.vm")
+		<div class="container" style="margin-top: 150px;">
+			#foreach($article in $articles)
+				$article.content;
+			#end
+		</div>
+		#parse("layout/foot.vm")
+	</body>
+
+</html>
