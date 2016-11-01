@@ -22,56 +22,13 @@
 		<div class="container">
 			<div class="col-sm-8">
 				<div style="height: 30px;"></div>
+				#foreach($article in $articles)
 				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
+					<h3 style="font-weight: bolder;"><a href="/blogs/article${article.articleId}.html" style="color: #000000;cursor:pointer;text-decoration: none;">$article.title</a></h3>
+					<h5>$article.excerpt</h5>
+					<h6 class="pull-right">$article.createTime&nbsp;评论($article.commentNum)</h6>
 				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
+				#end
 
 			</div>
 		</div>

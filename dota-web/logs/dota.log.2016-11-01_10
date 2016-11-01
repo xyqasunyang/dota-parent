@@ -1,0 +1,906 @@
+2016-11-01 10:18:57,288 - ResourceManager : unable to find resource 'error.vm' in any resource loader.
+2016-11-01 10:18:57,290 - ResourceManager : unable to find resource 'error.html.vm' in any resource loader.
+2016-11-01 10:19:44,406 - ResourceManager : unable to find resource 'error.vm' in any resource loader.
+2016-11-01 10:19:44,407 - ResourceManager : unable to find resource 'error.html.vm' in any resource loader.
+2016-11-01 10:20:16,597 - Starting DotaMain on ASUS-PC with PID 10948 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-11-01 10:20:16,598 - No active profile set, falling back to default profiles: default
+2016-11-01 10:20:16,665 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7be44bf8: startup date [Tue Nov 01 10:20:16 CST 2016]; root of context hierarchy
+2016-11-01 10:20:16,997 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-01 10:20:17,456 - Loading XML bean definitions from class path resource [redis.xml]
+2016-11-01 10:20:17,922 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$e04b7c49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,145 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,409 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,420 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,423 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$edac1ad5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,436 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,437 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,438 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,440 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,441 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,442 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,444 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,446 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,448 - Bean 'articleDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,463 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bad7c9a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:20:18,734 - Tomcat initialized with port(s): 8088 (http)
+2016-11-01 10:20:18,745 - Starting service Tomcat
+2016-11-01 10:20:18,746 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-11-01 10:20:18,826 - Initializing Spring embedded WebApplicationContext
+2016-11-01 10:20:18,826 - Root WebApplicationContext: initialization completed in 2163 ms
+2016-11-01 10:20:19,118 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-01 10:20:19,122 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-01 10:20:19,122 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-01 10:20:19,122 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-01 10:20:19,122 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-01 10:20:19,122 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-11-01 10:20:19,417 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7be44bf8: startup date [Tue Nov 01 10:20:16 CST 2016]; root of context hierarchy
+2016-11-01 10:20:19,480 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:20:19,483 - Mapped "{[/admin/article/{id}.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticle(org.springframework.ui.ModelMap,java.lang.String)
+2016-11-01 10:20:19,483 - Mapped "{[/admin/addArticle.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticle(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,483 - Mapped "{[/admin/addArticle.do]}" onto public java.lang.Object com.cd.dota.web.controller.AdminController.addArticle(com.cd.dota.dal.domain.ArticleDO,javax.servlet.http.HttpSession)
+2016-11-01 10:20:19,484 - Mapped "{[/admin/admin.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,484 - Mapped "{[/admin/articleManage.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.articleManage(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,484 - Mapped "{[/admin/addArticleContent.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticleContent(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,487 - Mapped "{[/blogs/java.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.java(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,487 - Mapped "{[/blogs/html.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.html(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,487 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,487 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,488 - Mapped "{[/blogs/linux.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.linux(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,488 - Mapped "{[/blogs/work.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.work(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,488 - Mapped "{[/blogs/about.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.about(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,489 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,489 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-01 10:20:19,491 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-11-01 10:20:19,491 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,491 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:20:19,491 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:20:19,491 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-11-01 10:20:19,492 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:20:19,492 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-11-01 10:20:19,493 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-11-01 10:20:19,494 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:20:19,494 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:20:19,494 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-11-01 10:20:19,497 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:20:19,497 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-01 10:20:19,529 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:20:19,529 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:20:19,577 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:20:19,826 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-01 10:20:19,980 - Registering beans for JMX exposure on startup
+2016-11-01 10:20:20,010 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:20:20,017 - Starting ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:20:20,025 - Using a shared selector for servlet write/read
+2016-11-01 10:20:20,038 - Tomcat started on port(s): 8088 (http)
+2016-11-01 10:20:20,042 - Started DotaMain in 3.74 seconds (JVM running for 4.015)
+2016-11-01 10:20:24,731 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-01 10:20:24,731 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-01 10:20:24,744 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2016-11-01 10:20:24,816 - ResourceManager : unable to find resource 'error.vm' in any resource loader.
+2016-11-01 10:20:24,817 - ResourceManager : unable to find resource 'error.html.vm' in any resource loader.
+2016-11-01 10:20:28,357 - ResourceManager : unable to find resource 'error.vm' in any resource loader.
+2016-11-01 10:20:28,358 - ResourceManager : unable to find resource 'error.html.vm' in any resource loader.
+2016-11-01 10:21:01,499 - Starting DotaMain on ASUS-PC with PID 5876 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-11-01 10:21:01,499 - No active profile set, falling back to default profiles: default
+2016-11-01 10:21:01,571 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2bc68bff: startup date [Tue Nov 01 10:21:01 CST 2016]; root of context hierarchy
+2016-11-01 10:21:01,911 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-01 10:21:02,318 - Loading XML bean definitions from class path resource [redis.xml]
+2016-11-01 10:21:02,779 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$15d865ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,007 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,279 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,291 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,294 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$23390439] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,307 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,308 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,310 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,312 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,314 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,315 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,316 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,318 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,319 - Bean 'articleDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,335 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f064b309] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:03,607 - Tomcat initialized with port(s): 8088 (http)
+2016-11-01 10:21:03,617 - Starting service Tomcat
+2016-11-01 10:21:03,618 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-11-01 10:21:03,696 - Initializing Spring embedded WebApplicationContext
+2016-11-01 10:21:03,696 - Root WebApplicationContext: initialization completed in 2127 ms
+2016-11-01 10:21:03,987 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-01 10:21:03,991 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-01 10:21:03,991 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-01 10:21:03,991 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-01 10:21:03,991 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-01 10:21:03,991 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-11-01 10:21:04,300 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2bc68bff: startup date [Tue Nov 01 10:21:01 CST 2016]; root of context hierarchy
+2016-11-01 10:21:04,365 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:04,368 - Mapped "{[/admin/addArticleContent.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticleContent(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,368 - Mapped "{[/admin/addArticle.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticle(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,368 - Mapped "{[/admin/addArticle.do]}" onto public java.lang.Object com.cd.dota.web.controller.AdminController.addArticle(com.cd.dota.dal.domain.ArticleDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:04,369 - Mapped "{[/admin/admin.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,369 - Mapped "{[/admin/articleManage.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.articleManage(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,372 - Mapped "{[/blogs/java.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.java(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,372 - Mapped "{[/blogs/html.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.html(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,373 - Mapped "{[/blogs/article/{id}.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.addArticle(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-01 10:21:04,373 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,373 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,373 - Mapped "{[/blogs/linux.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.linux(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,373 - Mapped "{[/blogs/work.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.work(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,373 - Mapped "{[/blogs/about.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.about(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,374 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-01 10:21:04,374 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,376 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-11-01 10:21:04,376 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,376 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:04,377 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:04,377 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-11-01 10:21:04,377 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:04,378 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-11-01 10:21:04,378 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-11-01 10:21:04,379 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:04,379 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:04,379 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:04,381 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:04,382 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-01 10:21:04,411 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:04,411 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:04,455 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:04,695 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-01 10:21:04,850 - Registering beans for JMX exposure on startup
+2016-11-01 10:21:04,881 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:21:04,888 - Starting ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:21:04,897 - Using a shared selector for servlet write/read
+2016-11-01 10:21:04,910 - Tomcat started on port(s): 8088 (http)
+2016-11-01 10:21:04,914 - Started DotaMain in 3.713 seconds (JVM running for 3.989)
+2016-11-01 10:21:07,225 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-01 10:21:07,225 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-01 10:21:07,238 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2016-11-01 10:21:07,304 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:21:13,111 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:21:14,022 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:21:18,856 - Starting DotaMain on ASUS-PC with PID 7580 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-11-01 10:21:18,856 - No active profile set, falling back to default profiles: default
+2016-11-01 10:21:18,923 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fc40f32: startup date [Tue Nov 01 10:21:18 CST 2016]; root of context hierarchy
+2016-11-01 10:21:19,272 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-01 10:21:19,712 - Loading XML bean definitions from class path resource [redis.xml]
+2016-11-01 10:21:20,174 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$d6dc54e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,388 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,678 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,690 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,693 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e43cf36e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,707 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,708 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,709 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,711 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,713 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,714 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,716 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,717 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,719 - Bean 'articleDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:20,735 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b168a23e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:21,008 - Tomcat initialized with port(s): 8088 (http)
+2016-11-01 10:21:21,019 - Starting service Tomcat
+2016-11-01 10:21:21,020 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-11-01 10:21:21,101 - Initializing Spring embedded WebApplicationContext
+2016-11-01 10:21:21,101 - Root WebApplicationContext: initialization completed in 2180 ms
+2016-11-01 10:21:21,421 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-01 10:21:21,429 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-01 10:21:21,429 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-01 10:21:21,429 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-01 10:21:21,429 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-01 10:21:21,429 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-11-01 10:21:21,708 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fc40f32: startup date [Tue Nov 01 10:21:18 CST 2016]; root of context hierarchy
+2016-11-01 10:21:21,771 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:21,773 - Mapped "{[/admin/addArticleContent.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticleContent(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,773 - Mapped "{[/admin/addArticle.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticle(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,774 - Mapped "{[/admin/addArticle.do]}" onto public java.lang.Object com.cd.dota.web.controller.AdminController.addArticle(com.cd.dota.dal.domain.ArticleDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:21,774 - Mapped "{[/admin/admin.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,774 - Mapped "{[/admin/articleManage.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.articleManage(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,778 - Mapped "{[/blogs/java.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.java(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,778 - Mapped "{[/blogs/html.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.html(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,778 - Mapped "{[/blogs/article/{id}.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.addArticle(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,778 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,778 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,778 - Mapped "{[/blogs/linux.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.linux(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,778 - Mapped "{[/blogs/work.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.work(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,778 - Mapped "{[/blogs/about.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.about(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,779 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,779 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-01 10:21:21,781 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-11-01 10:21:21,781 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,782 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:21,782 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:21,782 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-11-01 10:21:21,783 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:21,783 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-11-01 10:21:21,783 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-11-01 10:21:21,784 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:21,784 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:21,784 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:21,786 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:21,787 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-01 10:21:21,818 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:21,818 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:21,865 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:22,108 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-01 10:21:22,265 - Registering beans for JMX exposure on startup
+2016-11-01 10:21:22,296 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:21:22,303 - Starting ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:21:22,312 - Using a shared selector for servlet write/read
+2016-11-01 10:21:22,325 - Tomcat started on port(s): 8088 (http)
+2016-11-01 10:21:22,329 - Started DotaMain in 3.772 seconds (JVM running for 4.05)
+2016-11-01 10:21:24,017 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-01 10:21:24,017 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-01 10:21:24,030 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2016-11-01 10:21:24,077 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:21:34,087 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:21:38,872 - Starting DotaMain on ASUS-PC with PID 7540 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-11-01 10:21:38,873 - No active profile set, falling back to default profiles: default
+2016-11-01 10:21:38,942 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5372194e: startup date [Tue Nov 01 10:21:38 CST 2016]; root of context hierarchy
+2016-11-01 10:21:39,338 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-01 10:21:39,756 - Loading XML bean definitions from class path resource [redis.xml]
+2016-11-01 10:21:40,232 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$436421ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,468 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,735 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,746 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,750 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$50c4c038] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,764 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,765 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,767 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,769 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,770 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,771 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,773 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,774 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,776 - Bean 'articleDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:40,793 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1df06f08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:21:41,072 - Tomcat initialized with port(s): 8088 (http)
+2016-11-01 10:21:41,083 - Starting service Tomcat
+2016-11-01 10:21:41,083 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-11-01 10:21:41,163 - Initializing Spring embedded WebApplicationContext
+2016-11-01 10:21:41,163 - Root WebApplicationContext: initialization completed in 2223 ms
+2016-11-01 10:21:41,480 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-01 10:21:41,487 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-01 10:21:41,488 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-01 10:21:41,488 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-01 10:21:41,488 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-01 10:21:41,488 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-11-01 10:21:41,760 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5372194e: startup date [Tue Nov 01 10:21:38 CST 2016]; root of context hierarchy
+2016-11-01 10:21:41,822 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:41,824 - Mapped "{[/admin/addArticle.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticle(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,825 - Mapped "{[/admin/addArticle.do]}" onto public java.lang.Object com.cd.dota.web.controller.AdminController.addArticle(com.cd.dota.dal.domain.ArticleDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:41,825 - Mapped "{[/admin/admin.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,825 - Mapped "{[/admin/articleManage.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.articleManage(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,825 - Mapped "{[/admin/addArticleContent.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticleContent(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,829 - Mapped "{[/blogs/java.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.java(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,829 - Mapped "{[/blogs/html.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.html(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,829 - Mapped "{[/blogs/article/{id}.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.addArticle(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-01 10:21:41,829 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,830 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,830 - Mapped "{[/blogs/linux.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.linux(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,830 - Mapped "{[/blogs/work.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.work(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,830 - Mapped "{[/blogs/about.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.about(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,831 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-01 10:21:41,831 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,832 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-11-01 10:21:41,832 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,833 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:41,833 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:41,833 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-11-01 10:21:41,834 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:41,834 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-11-01 10:21:41,834 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-11-01 10:21:41,835 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:41,835 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:41,835 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:21:41,837 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:21:41,838 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-01 10:21:41,870 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:41,870 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:41,913 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:21:42,159 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-01 10:21:42,318 - Registering beans for JMX exposure on startup
+2016-11-01 10:21:42,350 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:21:42,357 - Starting ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:21:42,366 - Using a shared selector for servlet write/read
+2016-11-01 10:21:42,381 - Tomcat started on port(s): 8088 (http)
+2016-11-01 10:21:42,385 - Started DotaMain in 3.81 seconds (JVM running for 4.08)
+2016-11-01 10:21:44,162 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-01 10:21:44,162 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-01 10:21:44,175 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2016-11-01 10:21:44,218 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:24:54,648 - maxIdle is larger than maxActive, setting maxIdle to: 20
+2016-11-01 10:24:55,043 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:20,442 - Starting DotaMain on ASUS-PC with PID 10012 (E:\sunyang\dota-parent\dota-web\target\classes started by ASUS in E:\sunyang\dota-parent\dota-web)
+2016-11-01 10:25:20,442 - No active profile set, falling back to default profiles: default
+2016-11-01 10:25:20,510 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45a1d1bf: startup date [Tue Nov 01 10:25:20 CST 2016]; root of context hierarchy
+2016-11-01 10:25:20,861 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-01 10:25:21,290 - Loading XML bean definitions from class path resource [redis.xml]
+2016-11-01 10:25:21,776 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$8e6980d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,006 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,284 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,297 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,300 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9bca1f5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,314 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,315 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,316 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,318 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,320 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,321 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,323 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,325 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,326 - Bean 'articleDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,342 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$68f5ce2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 10:25:22,628 - Tomcat initialized with port(s): 8088 (http)
+2016-11-01 10:25:22,639 - Starting service Tomcat
+2016-11-01 10:25:22,640 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-11-01 10:25:22,720 - Initializing Spring embedded WebApplicationContext
+2016-11-01 10:25:22,720 - Root WebApplicationContext: initialization completed in 2212 ms
+2016-11-01 10:25:23,028 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-01 10:25:23,032 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-01 10:25:23,032 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-01 10:25:23,032 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-01 10:25:23,032 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-01 10:25:23,047 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-11-01 10:25:23,338 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45a1d1bf: startup date [Tue Nov 01 10:25:20 CST 2016]; root of context hierarchy
+2016-11-01 10:25:23,402 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:25:23,405 - Mapped "{[/admin/addArticle.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticle(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,405 - Mapped "{[/admin/addArticle.do]}" onto public java.lang.Object com.cd.dota.web.controller.AdminController.addArticle(com.cd.dota.dal.domain.ArticleDO,javax.servlet.http.HttpSession)
+2016-11-01 10:25:23,405 - Mapped "{[/admin/addArticleContent.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticleContent(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,405 - Mapped "{[/admin/admin.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,405 - Mapped "{[/admin/articleManage.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.articleManage(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,409 - Mapped "{[/blogs/java.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.java(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,409 - Mapped "{[/blogs/article{id}.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.addArticle(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-01 10:25:23,410 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,410 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,410 - Mapped "{[/blogs/linux.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.linux(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,410 - Mapped "{[/blogs/work.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.work(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,410 - Mapped "{[/blogs/about.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.about(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,410 - Mapped "{[/blogs/html.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.html(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,411 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,411 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-01 10:25:23,413 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-11-01 10:25:23,413 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,413 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:25:23,413 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:25:23,413 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-11-01 10:25:23,414 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-01 10:25:23,414 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-11-01 10:25:23,415 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-11-01 10:25:23,416 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:25:23,416 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-01 10:25:23,416 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-11-01 10:25:23,418 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-01 10:25:23,418 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-01 10:25:23,450 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:25:23,450 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:25:23,498 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 10:25:23,747 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-01 10:25:23,905 - Registering beans for JMX exposure on startup
+2016-11-01 10:25:23,936 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:25:23,943 - Starting ProtocolHandler ["http-nio-8088"]
+2016-11-01 10:25:23,952 - Using a shared selector for servlet write/read
+2016-11-01 10:25:23,966 - Tomcat started on port(s): 8088 (http)
+2016-11-01 10:25:23,970 - Started DotaMain in 3.83 seconds (JVM running for 4.094)
+2016-11-01 10:25:31,342 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-01 10:25:31,342 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-01 10:25:31,376 - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2016-11-01 10:25:31,434 - maxIdle is larger than maxActive, setting maxIdle to: 20
+2016-11-01 10:25:31,882 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:39,464 - Cookie rejected: "$Version="1"; BAIDUID="D4F082ED7C952D8DD4754486E2C5C460:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:25:47,019 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:48,001 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:48,339 - Cookie rejected: "$Version="1"; BAIDUID="F7742D5A8EECAF92495FA5DBA4C90912:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:25:48,576 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:48,967 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:49,400 - Cookie rejected: "$Version="1"; BAIDUID="90CF8C1D1EB563B3CB4EBF752AC56C4D:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:25:49,641 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:49,919 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:50,168 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:25:50,674 - Cookie rejected: "$Version="1"; BAIDUID="D4227207E027B4F9FCDDFD464B9FD157:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:26:27,281 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:26:27,626 - Cookie rejected: "$Version="1"; BAIDUID="EE041C802DD56A17D933CE533B2319A8:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:26:58,842 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:26:59,172 - Cookie rejected: "$Version="1"; BAIDUID="667FA93B0CEE66591C1B0890AF707111:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:26:59,304 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:26:59,599 - Cookie rejected: "$Version="1"; BAIDUID="2DCF7951D935EE235C8CC9EA94F9FCDF:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:26:59,791 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:00,068 - Cookie rejected: "$Version="1"; BAIDUID="D69AB2661C7CEE5FD1F9BA3E9CDF8A92:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:27:00,858 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:01,484 - Cookie rejected: "$Version="1"; BAIDUID="0790CDD36AED14D3AD7418D52663151F:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:27:40,853 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:41,209 - Cookie rejected: "$Version="1"; BAIDUID="A9F203D4AB2F930437C521D6E8A764E4:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:27:41,698 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:41,980 - Cookie rejected: "$Version="1"; BAIDUID="86D716EB5EAA6B0A6A65CF4B59E79FA1:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:27:42,242 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:42,518 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:42,718 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:42,893 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:43,067 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:43,238 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:43,404 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:43,568 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:43,940 - Cookie rejected: "$Version="1"; BAIDUID="8900A22779E7731A2C8A5CB315F6481C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:27:44,286 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:44,492 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:44,854 - Cookie rejected: "$Version="1"; BAIDUID="B6CE0789011B88472E0B88DB9B43B198:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:27:48,906 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:49,249 - Cookie rejected: "$Version="1"; BAIDUID="771173EE7DCFF2CBC6D1174139114E54:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:27:53,234 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:27:53,850 - Cookie rejected: "$Version="1"; BAIDUID="1CB4AB2093C4539DF6505A1637EDAB4A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:28:18,733 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:28:19,132 - Cookie rejected: "$Version="1"; BAIDUID="C6DD3C9B4B259B7291AD884F2BCF6557:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:28:30,512 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-01 10:28:31,252 - Cookie rejected: "$Version="1"; BAIDUID="CAA4630FA809F91D302F453C558DA9FC:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:28:32,388 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:28:32,700 - Cookie rejected: "$Version="1"; BAIDUID="52B4156537F715228A545234DBCC6475:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:28:33,941 - Cookie rejected: "$Version="1"; BAIDUID="EC0119FCF9A8D0BA0642BF6444F9AE98:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:28:34,493 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:28:34,766 - Cookie rejected: "$Version="1"; BAIDUID="C034542FBE96F19830795BD3D29EB739:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:28:38,369 - Cookie rejected: "$Version="1"; BAIDUID="DECA848FE1C4F8E01019DC5BCDE3670C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:29:06,456 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:29:06,783 - Cookie rejected: "$Version="1"; BAIDUID="96BC19BAAB9EDD7B53AF3D6DC8477E32:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:29:22,613 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-01 10:29:22,930 - Cookie rejected: "$Version="1"; BAIDUID="F6BFAADE292814D84D71DBF8B3E21982:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:29:25,776 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:29:26,076 - Cookie rejected: "$Version="1"; BAIDUID="D235B23091FB3AA6F61975763FF499D9:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:30:09,937 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:30:10,672 - Cookie rejected: "$Version="1"; BAIDUID="7C6BF0D339B79B670E8ED076360FAECC:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:33:09,125 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:33:10,235 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:33:10,850 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:33:11,743 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:33:12,351 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:33:12,672 - Cookie rejected: "$Version="1"; BAIDUID="F39960DF1DB3CBDAC562D4DC7983EAF5:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:34:30,994 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:34:31,857 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:34:32,743 - Cookie rejected: "$Version="1"; BAIDUID="8B767E97874631E7983F630C037FE925:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:35:02,546 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:03,191 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:03,726 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:03,731 - Cookie rejected: "$Version="1"; BAIDUID="675AC251A838013565067235AE5B8466:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:35:04,081 - Cookie rejected: "$Version="1"; BAIDUID="0B836A7C9F6590245191684F09B0449B:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:35:04,233 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:04,602 - Cookie rejected: "$Version="1"; BAIDUID="BAF3F36468C5486A0D8C2BDAA88A5824:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:35:04,692 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:05,102 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:05,664 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:06,130 - Cookie rejected: "$Version="1"; BAIDUID="9F14705797350157699B766A84D9473E:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:35:12,174 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:12,516 - Cookie rejected: "$Version="1"; BAIDUID="9CD48539719252E2A7A8796F5CF91D8A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:35:12,735 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:13,176 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:13,569 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:13,911 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:14,188 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:14,434 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:35:16,200 - Cookie rejected: "$Version="1"; BAIDUID="E8839BB8BC9526EEAFC1AEA1F814DC25:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:35:47,654 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:00,365 - Cookie rejected: "$Version="1"; BAIDUID="7538C954AE1E0A7DE667EB32CBA5D0B0:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:36:15,237 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:15,757 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:33,894 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:34,404 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:34,886 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:35,355 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:35,809 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:36,271 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:36,698 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:54,712 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:55,585 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:56,035 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:57,116 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:36:57,528 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:06,509 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:07,007 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:07,402 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:07,708 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:07,978 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:08,227 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:08,325 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:08,581 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:08,659 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:08,869 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:09,074 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:25,807 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:26,269 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:26,693 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:27,221 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:27,760 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:28,300 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:28,523 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:28,824 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:37,058 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:37,640 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:38,121 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:38,572 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:39,051 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:39,488 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:39,899 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:40,273 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:40,697 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:41,009 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:41,256 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:41,544 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:41,726 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:41,990 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:42,222 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:42,383 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:42,643 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:42,810 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:37:42,870 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:38:20,238 - Cookie rejected: "$Version="1"; BAIDUID="F3EA57A4578481EA558B9760F836F759:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:39:07,254 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:09,071 - Cookie rejected: "$Version="1"; BAIDUID="0C286528CE76F6618F98C33922C446E6:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:39:24,756 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:25,385 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:25,897 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:26,388 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:26,838 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:27,251 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:38,391 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:39,071 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:39,488 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:39,985 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:40,456 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:40,769 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:41,112 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:41,143 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:41,423 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:41,586 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:41,706 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:39:41,960 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:05,891 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:06,402 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:19,424 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:19,874 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:20,323 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:20,875 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:21,344 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:21,872 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:40:22,307 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:41:00,621 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:41:07,734 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:41:56,780 - Cookie rejected: "$Version="1"; BAIDUID="41DD7C175003C673727375A283DA9593:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:42:17,392 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:18,263 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:18,777 - Cookie rejected: "$Version="1"; BAIDUID="597C596EA28393BA2591ADD378EF51D5:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:42:18,785 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:19,280 - Cookie rejected: "$Version="1"; BAIDUID="FDD828AB4705C16AFFA4860762C5C97B:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:42:19,356 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:19,908 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:20,534 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:20,769 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:21,053 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:24,476 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:25,104 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:25,878 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:26,386 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:26,625 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:26,875 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:26,968 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:28,028 - Cookie rejected: "$Version="1"; BAIDUID="38AE0644416B232D9A424479DB907459:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:42:34,829 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:35,297 - Cookie rejected: "$Version="1"; BAIDUID="62B5E20B50801A05E3A2D2D81A3E6303:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:42:35,402 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:35,882 - Cookie rejected: "$Version="1"; BAIDUID="6EF2D7A25C7F01FC486004DA61CA5808:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:42:43,730 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:44,268 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:44,695 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:44,904 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:45,194 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:45,301 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:45,522 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:45,599 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:45,838 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:48,224 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:42:48,685 - Cookie rejected: "$Version="1"; BAIDUID="EFEED5EA0AFF383E271D31273764685A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:43:59,444 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:00,185 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:00,689 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:01,361 - Cookie rejected: "$Version="1"; BAIDUID="F5989BFF55D88CF9F93DE0AA3DDCD51C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:44:16,850 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:17,357 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:17,396 - Cookie rejected: "$Version="1"; BAIDUID="10B4B030090ED9B05F91AECDA1C9CB45:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:44:17,785 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:18,242 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:18,698 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:19,025 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:19,276 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:19,558 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:20,147 - Cookie rejected: "$Version="1"; BAIDUID="18D45BA1FC75CCCC720E86B9D18EA5B5:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:44:39,974 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:40,489 - Cookie rejected: "$Version="1"; BAIDUID="A450A8F5E8E463FB75F129A6D2BDAA14:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:44:40,522 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:40,975 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:41,439 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:41,867 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:42,269 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:42,568 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:42,883 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:43,101 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:43,364 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:43,660 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:43,758 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:43,974 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:44,116 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:44,367 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:44,460 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:44,656 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:45,220 - Cookie rejected: "$Version="1"; BAIDUID="30CF955D2B39DD5CA783BC393E107BD0:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:44:51,918 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:44:52,403 - Cookie rejected: "$Version="1"; BAIDUID="58F31C33E2FC089C2411A69C85437C21:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:04,398 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:04,914 - Cookie rejected: "$Version="1"; BAIDUID="8847BE68FA048395B1402D36F52526B6:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:05,027 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:05,602 - Cookie rejected: "$Version="1"; BAIDUID="93D905CE1397C52A262F30FB3AD8A9FD:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:05,924 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:06,508 - Cookie rejected: "$Version="1"; BAIDUID="66117688108CE4FA2AA915ABC0DA2179:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:07,566 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:08,141 - Cookie rejected: "$Version="1"; BAIDUID="9F3A3EB624854C8776F2A1FFDEF1C8A1:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:26,366 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:26,906 - Cookie rejected: "$Version="1"; BAIDUID="10C8283529C947201849B9DC592EBA87:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:26,950 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:27,467 - Cookie rejected: "$Version="1"; BAIDUID="8D85261140B7D5599929E469D1B12C42:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:27,493 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:28,001 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:28,021 - Cookie rejected: "$Version="1"; BAIDUID="BDE5660F230DA9C71C5699BB8778FDCB:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:28,476 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:28,968 - Cookie rejected: "$Version="1"; BAIDUID="D04103E3308EE79090C920EEA46196D6:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:45:28,975 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:45:29,488 - Cookie rejected: "$Version="1"; BAIDUID="834D1004F6B4DD7A3A626293CFFA5E6A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:46:33,754 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:34,275 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:34,815 - Cookie rejected: "$Version="1"; BAIDUID="E49E245A8195BAE3F68F7ABF719E5748:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:46:38,887 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:39,377 - Cookie rejected: "$Version="1"; BAIDUID="940EB6A3297834C3072CB20C9FE8311A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:46:39,401 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:39,847 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:40,313 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:40,784 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:40,785 - Cookie rejected: "$Version="1"; BAIDUID="C4EFC9F5C306CEC7468608EDD570235C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:46:41,177 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:41,442 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:41,659 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:46:42,159 - Cookie rejected: "$Version="1"; BAIDUID="ABD299DD51BD77E7F9FB3881CEA4C8AF:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:07,347 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:07,894 - Cookie rejected: "$Version="1"; BAIDUID="B576BECEDD25C5B2B09D0DB6954ACD5C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:07,960 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:08,481 - Cookie rejected: "$Version="1"; BAIDUID="624D374A49F5CC4B4CEB051EF3BDF73B:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:08,544 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:09,063 - Cookie rejected: "$Version="1"; BAIDUID="330CB06A93CDDF3CEA7C8E0CEC7308D6:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:09,121 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:09,627 - Cookie rejected: "$Version="1"; BAIDUID="93A03BA23073F95DF5006D541608D423:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:09,652 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:10,152 - Cookie rejected: "$Version="1"; BAIDUID="090446057395C8B701B2FB051A2814D5:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:10,203 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:10,694 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:10,727 - Cookie rejected: "$Version="1"; BAIDUID="B8E0B7FDD1632EDD37B5EC5136C9BAFA:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:11,176 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:11,195 - Cookie rejected: "$Version="1"; BAIDUID="5E3D9055F26E61DB51FDFFC2C8E6E7AA:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:11,417 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:11,693 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:11,855 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:12,049 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:12,184 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:12,434 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:12,528 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:13,039 - Cookie rejected: "$Version="1"; BAIDUID="BE878014F56F75AA248779269956E690:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:13,416 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:13,899 - Cookie rejected: "$Version="1"; BAIDUID="A28FE785452CE47357A1F3A246A5B102:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:23,472 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:23,968 - Cookie rejected: "$Version="1"; BAIDUID="E5E623C1770B2F4D91447AEF57C82293:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:24,004 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:24,501 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:24,510 - Cookie rejected: "$Version="1"; BAIDUID="C6F2D4F817CEC5D1C7BF4C3D7A2303F1:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:47:24,971 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:25,216 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:25,494 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:25,653 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:25,907 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:26,307 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:26,555 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:26,714 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:26,967 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:27,125 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:27,290 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:27,455 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:27,691 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:47:28,260 - Cookie rejected: "$Version="1"; BAIDUID="55935354D804E43D45E776BF75F70CF9:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:03,905 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:04,375 - Cookie rejected: "$Version="1"; BAIDUID="51146E668C9A84FE446D25D63312B321:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:04,751 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:05,086 - Cookie rejected: "$Version="1"; BAIDUID="9725CA3902F86FE1B00BFB7412D83EF4:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:05,670 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:06,000 - Cookie rejected: "$Version="1"; BAIDUID="D6D71D7408C7B4F60864DB4486DD9711:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:06,439 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:06,768 - Cookie rejected: "$Version="1"; BAIDUID="08B96AB56F0CA1982F50233764FCC218:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:06,957 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:07,248 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:07,453 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:07,638 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:07,807 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:08,129 - Cookie rejected: "$Version="1"; BAIDUID="4D0C6F1006EAC09E037876942BF1B66B:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:09,438 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:09,621 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:09,786 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:10,153 - Cookie rejected: "$Version="1"; BAIDUID="B8D92B2D1F438704C4ECF4790199E282:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:21,721 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:22,053 - Cookie rejected: "$Version="1"; BAIDUID="1A52B112A57604AEA153392511145DEE:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:22,400 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:22,728 - Cookie rejected: "$Version="1"; BAIDUID="82B83FCFFC88FBCD7E6620A85BB3597D:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:46,453 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:46,843 - Cookie rejected: "$Version="1"; BAIDUID="C5A4A7CA5C5681F728B512F98364DA49:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:47,086 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:47,369 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:47,557 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:47,734 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:47,910 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:48,292 - Cookie rejected: "$Version="1"; BAIDUID="ECCD553E19F8F95A6996FCF80764F83A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:48,585 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:48,784 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:48,967 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:49,360 - Cookie rejected: "$Version="1"; BAIDUID="1147292B86606670DBFC4E6DF1D037C6:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:50,327 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:50,502 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:50,672 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:50,840 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:50,991 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:51,358 - Cookie rejected: "$Version="1"; BAIDUID="10A31DCED1D58BEAE57F1CEB5468B4B2:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:56,389 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:56,758 - Cookie rejected: "$Version="1"; BAIDUID="40B85CB9EAA096E688F8E3CC9216EEA8:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:57,006 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:57,378 - Cookie rejected: "$Version="1"; BAIDUID="3686AF7550A14978221B92D5A47D6DA6:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:48:57,400 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:48:57,731 - Cookie rejected: "$Version="1"; BAIDUID="31E20E0B62D8C3DD7D8BD979A6D0627E:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:49:11,316 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:49:11,637 - Cookie rejected: "$Version="1"; BAIDUID="2824B9090E86D97AD39E23419F43E9B9:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:49:11,920 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:49:12,228 - Cookie rejected: "$Version="1"; BAIDUID="619F251467356B9E792417D32EB1DCA0:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:49:12,484 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:49:12,783 - Cookie rejected: "$Version="1"; BAIDUID="344BB376BF882F5671E588004B454942:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:49:13,017 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:49:13,334 - Cookie rejected: "$Version="1"; BAIDUID="A1A252490BCA2317FEE4935B0C1619E2:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:49:13,403 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:49:13,589 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:49:13,759 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:49:14,069 - Cookie rejected: "$Version="1"; BAIDUID="BE3424832DF2B1948E0C997A37AEA38D:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:49:43,487 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:49:43,875 - Cookie rejected: "$Version="1"; BAIDUID="5E176DD3E223848BE4496B7333CFF1BE:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:51:17,334 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:18,350 - Cookie rejected: "$Version="1"; BAIDUID="B192FFB78835D2ACD4E011CB752B47C3:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:51:38,217 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:38,568 - Cookie rejected: "$Version="1"; BAIDUID="CA8B08DDD7B462EE96565D7E110C7915:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:51:38,775 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:39,075 - Cookie rejected: "$Version="1"; BAIDUID="E54552A79D265CB4E160B3C8CA1492F5:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:51:39,265 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:39,576 - Cookie rejected: "$Version="1"; BAIDUID="348B83B48F0BBA289944962FE073D5C2:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:51:40,225 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:40,513 - Cookie rejected: "$Version="1"; BAIDUID="79440CFDF1A8A46E29F843995C07C437:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:51:40,860 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:41,144 - Cookie rejected: "$Version="1"; BAIDUID="A84EE5C1F49C57F0DE85923607E81710:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:51:41,550 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:41,827 - Cookie rejected: "$Version="1"; BAIDUID="C610A38E1058245ABF1C453695A99E22:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:51:42,077 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:42,309 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:42,520 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:42,705 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:42,892 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:51:43,203 - Cookie rejected: "$Version="1"; BAIDUID="52E351A3BE4867E5667EBF986ABC7948:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:16,359 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:16,978 - Cookie rejected: "$Version="1"; BAIDUID="27900B2F4EDED812E857CE20AFA611DE:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:20,854 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:21,311 - Cookie rejected: "$Version="1"; BAIDUID="8ADC212776960E1789FC5F5EB2496B34:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:21,342 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:21,787 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:21,818 - Cookie rejected: "$Version="1"; BAIDUID="3BB8F105509CC79740982B468B7307D0:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:22,010 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:22,199 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:22,375 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:22,477 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:22,677 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:23,177 - Cookie rejected: "$Version="1"; BAIDUID="3B1B34CD5C8CC5AEEC736C669A5645BD:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:26,129 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:26,650 - Cookie rejected: "$Version="1"; BAIDUID="509871133E818F507867456224021486:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:26,741 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:27,215 - Cookie rejected: "$Version="1"; BAIDUID="5428920DE0A02783D82FFADEE97B04FF:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:27,217 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:27,446 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:27,611 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:27,793 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:28,251 - Cookie rejected: "$Version="1"; BAIDUID="B75F7761736A954D38D387B3E8ACC2C4:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:41,043 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:41,550 - Cookie rejected: "$Version="1"; BAIDUID="97859927EB666F4EB4A7D2D8369D1C77:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:41,769 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:42,157 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:42,389 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:42,602 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:42,707 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:43,197 - Cookie rejected: "$Version="1"; BAIDUID="C358128EB27B82C2FC28374491417562:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:45,409 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:45,868 - Cookie rejected: "$Version="1"; BAIDUID="F7A6CEDC7358085C29CDE4D41A9698E0:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:51,182 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:51,621 - Cookie rejected: "$Version="1"; BAIDUID="C5A58283A6110E5BB9FC3DC9AAEE0984:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:51,709 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:52,129 - Cookie rejected: "$Version="1"; BAIDUID="EBD2137453769802CAE6E05E04C3C9EA:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:52,184 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:52,607 - Cookie rejected: "$Version="1"; BAIDUID="31B6D00A3EC79243B9B2B1480F1137AB:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:52,742 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:53,143 - Cookie rejected: "$Version="1"; BAIDUID="0B36B4DEF34417B561FD3F3D6F843F45:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:52:53,218 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:53,425 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:53,692 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:53,817 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:53,978 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:54,194 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:54,254 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:54,473 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:54,718 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:54,808 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:55,036 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:55,245 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:52:55,688 - Cookie rejected: "$Version="1"; BAIDUID="73070153CFB6CB970D9D312FEADF1608:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:53:09,024 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:09,449 - Cookie rejected: "$Version="1"; BAIDUID="E3DE50B94F24DA176D20A0B54F30DF54:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:53:09,492 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:09,855 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:10,107 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:10,375 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:10,489 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:10,694 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:10,869 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:11,001 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:11,295 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:11,374 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:11,515 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:11,944 - Cookie rejected: "$Version="1"; BAIDUID="8FE3F1745851257612E6A923D1CDCCD7:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:53:11,993 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:12,415 - Cookie rejected: "$Version="1"; BAIDUID="989AB69F77DA69D098FB4A200B1DCCC2:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:53:33,387 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:33,817 - Cookie rejected: "$Version="1"; BAIDUID="BCCB745AB4A7FAB2FAC4F24C92C7990A:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:53:57,020 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:53:57,485 - Cookie rejected: "$Version="1"; BAIDUID="D4006C3B9DA648495FE6AB02B0EA8AEE:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:15,474 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:15,934 - Cookie rejected: "$Version="1"; BAIDUID="567F9FC018FB40E78BB19123125B8A9C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:18,636 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:19,070 - Cookie rejected: "$Version="1"; BAIDUID="29C3A3907E074BCCB66BF987F54C69A3:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:19,185 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:19,611 - Cookie rejected: "$Version="1"; BAIDUID="756F8C87BF93B57A2E40290E61FE5589:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:19,626 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:20,056 - Cookie rejected: "$Version="1"; BAIDUID="AAB1989D59745AF22E7BEF979DBC6957:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:20,137 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:20,561 - Cookie rejected: "$Version="1"; BAIDUID="B6EF3CF1F899017E8D66D85B1BE702CC:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:20,590 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:21,018 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:21,029 - Cookie rejected: "$Version="1"; BAIDUID="9118D33B6824958BE65AA9CBE96F9966:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:21,242 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:21,573 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:21,740 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:21,841 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:21,953 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:22,089 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:22,233 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:22,477 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:22,519 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:22,997 - Cookie rejected: "$Version="1"; BAIDUID="435AA6D03E90F689A8955E5AF8F26C90:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:25,714 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:26,153 - Cookie rejected: "$Version="1"; BAIDUID="FEF46A13784661C1E4E57A765380C741:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:41,636 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:42,075 - Cookie rejected: "$Version="1"; BAIDUID="EEC0E80D36DCBE724D1C21BF8FF155BF:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:52,727 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:53,172 - Cookie rejected: "$Version="1"; BAIDUID="537EB9BC652390E99DDC13B67E173085:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:53,275 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:53,715 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:53,735 - Cookie rejected: "$Version="1"; BAIDUID="0AC814B98F43D8AC990F5A77A85795E0:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:54,139 - Cookie rejected: "$Version="1"; BAIDUID="FD9FD3D3F00EAE8EBE81923BAD802FE3:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:54,220 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:54,672 - Cookie rejected: "$Version="1"; BAIDUID="3B11047F0BBB6F3C2BD7E133753E9192:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:54,685 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:55,131 - Cookie rejected: "$Version="1"; BAIDUID="3839FCFFF31491D27BFA7D15D6CC5150:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:54:55,158 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:55,460 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:55,727 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:54:56,209 - Cookie rejected: "$Version="1"; BAIDUID="16B0C167078504A74E855E2091EA7A2C:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:55:06,339 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:55:08,566 - Cookie rejected: "$Version="1"; BAIDUID="944A8E9D9FA9448ACCDBF20FAC573EDF:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots
+2016-11-01 10:55:45,706 - ResourceManager : unable to find resource 'screen/article.html.vm' in any resource loader.
+2016-11-01 10:55:46,302 - Cookie rejected: "$Version="1"; BAIDUID="78954B9D745FD862C908A37A3B974327:FG=1"; $Path="/"; $Domain=".baidu.com"". Domain attribute ".baidu.com" violates RFC 2109: host minus domain may not contain any dots

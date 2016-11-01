@@ -82,7 +82,7 @@ public class WebClient {
 
 		// 2.构造PostMethod的实例
 		PostMethod postMethod = new PostMethod(url);
-		// postMethod.setRequestHeader("Cookie","security_SESSIONID_sub=1xhd4nuegmfpl84hgume2mjlv");
+		 postMethod.setRequestHeader("SOAPAction","");
 		// 3.把参数值放入到PostMethod对象中
 		if (param != null) {
 			for (String key : param.keySet()) {

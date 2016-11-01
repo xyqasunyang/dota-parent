@@ -44,6 +44,9 @@
 		<if test="articleId != null">
 			AND article_id = #{articleId}
 		</if>
+		<if test="classify != null">
+			AND classify = #{classify}
+		</if>
 		<if test="pageStartNum!=null and pageSize!=null">
 			LIMIT #{pageStartNum},#{pageSize}
 		</if>

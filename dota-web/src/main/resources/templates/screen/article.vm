@@ -8,13 +8,15 @@
 		<meta name="description" content="hello">
 		<meta name="keywords" content="hello">
 		<title>首页</title>
-
+		<meta property="wb:webmaster" content="b46f01a9e52470fc" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/index.css" />
 		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../js/my_page.js"></script>
 		<script type="text/javascript" src="../js/index.js"></script>
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY&debug=true" type="text/javascript" charset="utf-8"></script>
+
 	</head>
 
 	<body>
@@ -22,14 +24,28 @@
 		<div class="container">
 			<div class="col-sm-8">
 				<div style="height: 30px;"></div>
-				#foreach($article in $articles)
 				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;"><a href="/blogs/article${article.articleId}.html" style="color: #000000;cursor:pointer;text-decoration: none;">$article.title</a></h3>
-					<h5>$article.excerpt</h5>
-					<h6 class="pull-right">$article.createTime&nbsp;评论($article.commentNum)</h6>
+					<h3 style="font-weight: bolder;" class="text-center">$article.title</h3>
+					<div>$article.content</div>
 				</div>
-				#end
+			</div>
 
+			<div class="col-sm-8">
+
+				<hr />
+				<div class="col-sm-1" style="border-radius:50px;background-image: url(../../picture/153310.jpg);height: 50px;width: 50px;">
+
+				</div>
+				<div class="col-sm-11">
+					<textarea style="height:80px;width: 100%; resize: none;border: 1px solid #C4E3F3;"></textarea>
+					<div class="" style="height: 36px;background-color: #F2F2F2;margin-top: -5px;border: 1px solid #C4E3F3;">
+						<button class="btn pull-right">发布</button>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					
+					
+				</div>
 			</div>
 		</div>
 		#parse("layout/foot.vm")

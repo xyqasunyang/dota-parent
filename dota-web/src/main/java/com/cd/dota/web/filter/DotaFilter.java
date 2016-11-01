@@ -31,15 +31,13 @@ public class DotaFilter implements Filter {
 			if(httpRequest.getRequestURI().endsWith("/addArticle.html")||
 					httpRequest.getRequestURI().endsWith("/articleManage.html")
 					){
-				httpResponse.sendRedirect("http://localhost:8088/admin/admin.html");
+				httpResponse.sendRedirect("/admin/admin.html");
 				return;
 			}
 		}
 		
-		
-		
 		if(httpRequest.getRequestURI().equals("/")){
-			httpResponse.sendRedirect("http://localhost:8088/blogs/index.html");
+			httpResponse.sendRedirect("/blogs/index.html");
 			return;
 		}
 		String str = String.valueOf(httpRequest.getSession().getAttribute(httpRequest.getLocalAddr()));

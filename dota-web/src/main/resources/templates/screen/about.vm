@@ -19,61 +19,9 @@
 
 	<body>
 		#parse("layout/head.vm")
-		<div class="container">
-			<div class="col-sm-8">
-				<div style="height: 30px;"></div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
-				<div style="margin-bottom: 50px;">
-					<h3 style="font-weight: bolder;">对移动端h5项目的一点总结</h3>
-					<h5>到现在也做了不少的h5，遇到了不少的坑，也对曾经的经验教训总结一下</h5>
-					<h6 class="pull-right">@2016-10-08评论(10)</h6>
-				</div>
+		<div class="container" style="height: 800px;">
+			<h1 style="margin-top: 100px;">作者很懒，什么都没有留下</h1>			
 
-			</div>
 		</div>
 		#parse("layout/foot.vm")
 	</body>

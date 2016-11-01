@@ -54,6 +54,9 @@
 				<div>
 					<a href="/admin/admin.html" class="index-ico" style="font-size: 20px;"><span>admin</span></a>
 				</div>
+				<div>
+					<a href="/robot/robot.html" class="index-ico" style="font-size: 20px;"><span>some games</span></a>
+				</div>
 
 			</div>
 		</div>

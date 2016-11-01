@@ -79,9 +79,12 @@ $(function() {
 	}
 
 	window.onload = function getLocation() {
-		if(navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(showPosition, showError);
-		} else {}
+		var uri = window.location.pathname;
+		if(uri.endsWith("/robot.html")) {
+			if(navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition, showError);
+			} else {}
+		}
 	}
 
 	function showPosition(position) {
@@ -139,9 +142,9 @@ $(function() {
 			},
 			dataType: "json",
 			success: function(data) {
-				if(data.code==0){
-					window.location.href="/admin/articleManage.html";
-				}else{
+				if(data.code == 0) {
+					window.location.href = "/admin/articleManage.html";
+				} else {
 					$("#login-password-error").html(data.error);
 				}
 			},
