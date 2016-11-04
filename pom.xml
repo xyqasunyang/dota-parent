@@ -12,7 +12,7 @@
 			<id>website</id>
 			<url>scp://webhost.company.com/www/website</url>
 		</site>
-	</distributionManagement>
+	</distributionManagement> 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -68,21 +68,20 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.38</version>
-		</dependency>
-		<!-- 数据库连接池 -->
+		</dependency> 
+		<!-- 数据库连接池 --> 
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
 			<version>1.0.5</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20090211</version>
 		</dependency>
 	</dependencies>
-
-
 	<build>
 		<plugins>
 			<plugin>

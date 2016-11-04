@@ -50,6 +50,7 @@
 		<if test="pageStartNum!=null and pageSize!=null">
 			LIMIT #{pageStartNum},#{pageSize}
 		</if>
+		order by article_id desc
 	</select>
 
 

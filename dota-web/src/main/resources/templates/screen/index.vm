@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="hello">
 		<meta name="keywords" content="hello">
-		<title>首页</title>
+		<title>Sun’s Blogs</title>
 		<meta property="wb:webmaster" content="b46f01a9e52470fc" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/index.css" />
@@ -32,7 +32,6 @@
 				</div>
 				#end
 				
-
 			</div>
 			<div class="col-sm-4" style="margin-top: 30px;">
 				<div style="border-bottom:solid 1px #8F8F94;">
@@ -40,10 +39,10 @@
 				</div>
 				<div>
 					<img src="../../picture/avatar.png" style="height: 60px;width: 60px;">
-					<h5 style="text-indent: 2em;line-height: 150%;">Sun,java开发工程师。</h5>
+					<h5 style="text-indent: 2em;line-height: 150%;">Sun，java开发工程师。</h5>
 					<h5 style="text-indent: 2em;line-height: 150%;">目前是一名java开发工程师，正在痛苦的学习中。</h5>
-					<h5 style="text-indent: 2em;line-height: 150%;">专注后台技术，关注交互体验，擅长java开发。</h5>
-					<h5 style="text-indent: 2em;line-height: 150%;">坚信最终不会吃土。</h5>
+					<h5 style="text-indent: 2em;line-height: 150%;">专注后台技术，擅长java开发。</h5>
+					<h5 style="text-indent: 2em;line-height: 150%;">默默吃土。</h5>
 				</div>
 				<div style="border-bottom:solid 1px #8F8F94;margin: 30px 0 20px 0;">
 					<h4>Friendly Link</h4>
@@ -57,7 +56,6 @@
 				<div>
 					<a href="/robot/robot.html" class="index-ico" style="font-size: 20px;"><span>some games</span></a>
 				</div>
-
 			</div>
 		</div>
 		#parse("layout/foot.vm")

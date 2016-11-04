@@ -1,11 +1,4 @@
 <!-- footer BEGIN -->
-<!--<div class="text-center" style="background-color: #0054a0;;color: white;">
-	<p><a href="#" style="color: white;text-decoration: none;">关于我们  |  </a><a href="#" style="color: white;text-decoration: none;">关于我们  |  </a>
-		<a href="#" style="color: white;text-decoration: none;">法律公告  |  </a><a href="#" style="color: white;text-decoration: none;">联系我们    </a></p>
-	<p>地址：浙江省海宁市XXXX</p>
-	<p>电话：1575710XXXX</p>
-	<p>扣扣：309592XXXX</p>
-</div>-->
 <div class="container text-center"style="margin-top: 20px;">
 	<p>Copyright © 2016-2016 All Rights Reserved. 备案号：浙ICP备16011544号</p>
 </div>

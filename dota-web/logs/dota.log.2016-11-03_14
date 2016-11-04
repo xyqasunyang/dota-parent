@@ -1,0 +1,99 @@
+2016-11-03 14:43:14,330 - Starting DotaMain on 192.168.0.123 with PID 2593 (/Users/sunyang/Documents/workspace/dota-parent/dota-web/target/classes started by sunyang in /Users/sunyang/Documents/workspace/dota-parent/dota-web)
+2016-11-03 14:43:14,332 - No active profile set, falling back to default profiles: default
+2016-11-03 14:43:14,573 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39faf9eb: startup date [Thu Nov 03 14:43:14 CST 2016]; root of context hierarchy
+2016-11-03 14:43:15,568 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-03 14:43:16,396 - Loading XML bean definitions from class path resource [redis.xml]
+2016-11-03 14:43:17,271 - Bean 'dotaMain' of type [class com.cd.dota.web.application.DotaMain$$EnhancerBySpringCGLIB$$ab06a7e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:17,732 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,209 - Bean 'sqlSessionFactoryBean' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,228 - Bean 'mybatis.CONFIGURATION_PROPERTIES' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,233 - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b867466c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,252 - Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,253 - Bean 'userNewsRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,256 - Bean 'userMediumRelationDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,260 - Bean 'userDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,263 - Bean 'newsDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,266 - Bean 'mediumDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,271 - Bean 'feedbackDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,275 - Bean 'chatDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,279 - Bean 'articleDAO' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,309 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8592f53c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 14:43:18,794 - Tomcat initialized with port(s): 8088 (http)
+2016-11-03 14:43:18,816 - Starting service Tomcat
+2016-11-03 14:43:18,818 - Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-11-03 14:43:19,011 - Initializing Spring embedded WebApplicationContext
+2016-11-03 14:43:19,011 - Root WebApplicationContext: initialization completed in 4454 ms
+2016-11-03 14:43:19,701 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-03 14:43:19,709 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-03 14:43:19,709 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-03 14:43:19,709 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-03 14:43:19,709 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-03 14:43:19,709 - Mapping filter: 'dotaFilter' to urls: [/*]
+2016-11-03 14:43:20,364 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39faf9eb: startup date [Thu Nov 03 14:43:14 CST 2016]; root of context hierarchy
+2016-11-03 14:43:20,506 - Mapped "{[/address/address.do]}" onto public java.lang.Object com.cd.dota.web.controller.AddressController.address(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-03 14:43:20,510 - Mapped "{[/admin/addArticle.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticle(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,510 - Mapped "{[/admin/addArticle.do]}" onto public java.lang.Object com.cd.dota.web.controller.AdminController.addArticle(com.cd.dota.dal.domain.ArticleDO,javax.servlet.http.HttpSession)
+2016-11-03 14:43:20,511 - Mapped "{[/admin/admin.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.joke(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,511 - Mapped "{[/admin/addArticleContent.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.addArticleContent(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,511 - Mapped "{[/admin/articleManage.html]}" onto public java.lang.String com.cd.dota.web.controller.AdminController.articleManage(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,517 - Mapped "{[/blogs/java.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.java(org.springframework.ui.ModelMap,com.cd.dota.dal.domain.ArticleDO)
+2016-11-03 14:43:20,518 - Mapped "{[/blogs/article{id}.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.addArticle(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-03 14:43:20,518 - Mapped "{[/blogs/html.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.html(org.springframework.ui.ModelMap,com.cd.dota.dal.domain.ArticleDO)
+2016-11-03 14:43:20,518 - Mapped "{[/blogs/linux.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.linux(org.springframework.ui.ModelMap,com.cd.dota.dal.domain.ArticleDO)
+2016-11-03 14:43:20,518 - Mapped "{[/blogs/work.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.work(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,518 - Mapped "{[/blogs/share.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.share(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,519 - Mapped "{[/blogs/index.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.joke(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,519 - Mapped "{[/blogs/about.html]}" onto public java.lang.String com.cd.dota.web.controller.BokeController.about(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,520 - Mapped "{[/joke/joke.html]}" onto public java.lang.String com.cd.dota.web.controller.JokeController.Joke(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,520 - Mapped "{[/joke/joke.do]}" onto public java.lang.Object com.cd.dota.web.controller.JokeController.Jokedo(org.springframework.ui.ModelMap,java.lang.Integer)
+2016-11-03 14:43:20,523 - Mapped "{[/qq/qqevaluate.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.index()
+2016-11-03 14:43:20,523 - Mapped "{[/qq/getIp.do]}" onto public java.lang.Object com.cd.dota.web.controller.QqEvaluateController.getIp(javax.servlet.http.HttpServletRequest)
+2016-11-03 14:43:20,524 - Mapped "{[/qq/swipe.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.swipe()
+2016-11-03 14:43:20,524 - Mapped "{[/qq/tosay.html]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.tosay(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2016-11-03 14:43:20,524 - Mapped "{[/qq/evaluate.do]}" onto public java.lang.String com.cd.dota.web.controller.QqEvaluateController.evaluate(java.lang.String,org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,526 - Mapped "{[/robot/robot.html]}" onto public java.lang.String com.cd.dota.web.controller.RobotController.robot()
+2016-11-03 14:43:20,526 - Mapped "{[/robot/robot.do]}" onto public java.lang.Object com.cd.dota.web.controller.RobotController.Robot(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-11-03 14:43:20,545 - Mapped "{[/history/history.html]}" onto public java.lang.String com.cd.dota.web.controller.TodayController.today(org.springframework.ui.ModelMap)
+2016-11-03 14:43:20,549 - Mapped "{[/user/init.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.init(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-03 14:43:20,549 - Mapped "{[/user/feedback.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.feedback(com.cd.dota.dal.domain.FeedbackDO,javax.servlet.http.HttpSession)
+2016-11-03 14:43:20,549 - Mapped "{[/user/login.do]}" onto public java.lang.Object com.cd.dota.web.controller.UserController.login(com.cd.dota.dal.domain.UserDO,javax.servlet.http.HttpSession)
+2016-11-03 14:43:20,552 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-03 14:43:20,552 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-03 14:43:20,600 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-03 14:43:20,600 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-03 14:43:20,711 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-03 14:43:21,222 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-03 14:43:21,680 - Registering beans for JMX exposure on startup
+2016-11-03 14:43:21,726 - Initializing ProtocolHandler ["http-nio-8088"]
+2016-11-03 14:43:21,745 - Starting ProtocolHandler ["http-nio-8088"]
+2016-11-03 14:43:21,775 - Using a shared selector for servlet write/read
+2016-11-03 14:43:21,797 - Tomcat started on port(s): 8088 (http)
+2016-11-03 14:43:21,807 - Started DotaMain in 8.121 seconds (JVM running for 8.852)
+2016-11-03 14:43:26,546 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-03 14:43:26,547 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-03 14:43:26,563 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2016-11-03 14:43:26,725 - maxIdle is larger than maxActive, setting maxIdle to: 20
+2016-11-03 14:43:27,479 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:44:27,220 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:44:51,788 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:45:02,539 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:45:42,123 - ResourceManager : unable to find resource 'screen/java.html.vm' in any resource loader.
+2016-11-03 14:45:45,798 - ResourceManager : unable to find resource 'screen/html.html.vm' in any resource loader.
+2016-11-03 14:45:48,974 - ResourceManager : unable to find resource 'screen/linux.html.vm' in any resource loader.
+2016-11-03 14:45:51,809 - ResourceManager : unable to find resource 'screen/java.html.vm' in any resource loader.
+2016-11-03 14:46:54,251 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:25,830 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:27,668 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:28,881 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:29,930 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:30,869 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:31,740 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:32,873 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:33,802 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:43,615 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:45,472 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:46,805 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:56:55,490 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:59:26,749 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:59:28,039 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
+2016-11-03 14:59:29,623 - ResourceManager : unable to find resource 'screen/index.html.vm' in any resource loader.
